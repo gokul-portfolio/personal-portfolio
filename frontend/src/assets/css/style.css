@@ -1,28 +1,21 @@
-/* ===============================
-   Font Faces
-=============================== */
 @font-face {
     font-family: "head-font";
-    src: url("./assets/fonts/HeadFont.woff2") format("woff2"),
-        url("./assets/fonts/HeadFont.woff") format("woff");
+    src: url("../fonts/Acumin-Variable-Concept.ttf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "para-font";
-    src: url("./assets/fonts/ParaFont.woff2") format("woff2"),
-        url("./assets/fonts/ParaFont.woff") format("woff");
+    src: url("../fonts/WorkSans-Regular.ttf");
     font-weight: normal;
     font-style: normal;
 }
 
-/* ===============================
-   CSS Variables
-=============================== */
+
 :root {
-    --primary-color: #32448d;
-    --secondary-color: #2e4190;
+    --primary-color: #161729;
+    --secondary-color: #FF3838;
 
     --hover-color: #ff0000;
     --text-color: #555;
@@ -53,10 +46,24 @@ body {
     font-family: var(--font-para);
     font-size: 16px;
     line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--white);
+    color: #e6e6f0;
+    background-color: #161729;
+    background-image:
+        radial-gradient(circle at top left,
+            rgba(120, 120, 255, 0.08),
+            transparent 40%),
+        radial-gradient(circle at bottom right,
+            rgba(255, 80, 120, 0.08),
+            transparent 40%),
+        linear-gradient(180deg,
+            #161729 0%,
+            #121326 100%);
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     overflow-x: hidden;
 }
+
 
 h1,
 h2,
@@ -74,13 +81,14 @@ p {
     margin-bottom: 1rem;
 }
 
-h4{
+h4 {
     color: red;
 }
 
-h2{
+h2 {
     color: aqua;
 }
+
 a {
     text-decoration: none;
     color: inherit;
@@ -108,4 +116,345 @@ a:hover {
 ::selection {
     background-color: var(--primary-color);
     color: var(--white);
+}
+
+
+/* =============================================================================
+                            commmon styles
+================================================================================ */
+.container-fluid {
+    width: 80%;
+}
+
+.get-started-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 8px 0px 8px 22px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 12px 30px rgba(238, 9, 121, 0.35);
+    overflow: hidden;
+}
+
+.get-started-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 35px rgba(238, 9, 121, 0.45);
+}
+
+.get-started-btn .btn-text {
+    white-space: nowrap;
+}
+
+.get-started-btn .btn-arrow {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.get-started-btn:hover .btn-arrow {
+    transform: translateX(5px);
+    background: rgba(0, 0, 0, 0.35);
+}
+
+
+
+/* ==============================header================================ */
+.portfolio-navbar {
+    background: linear-gradient(90deg, #0f0c29, #221d53, #24243e);
+    padding: 14px 0;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom: 2px solid var(--secondary-color);
+    z-index: 999;
+}
+
+.portfolio-navbar .logo img {
+    height: 42px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-center {
+    margin: auto;
+    gap: 32px;
+}
+
+.portfolio-navbar .nav-link {
+    color: var(--white) !important;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--font-head);
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.portfolio-navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: var(--secondary-color);
+    transition: 0.3s ease;
+}
+
+.portfolio-navbar .nav-link:hover::after,
+.portfolio-navbar .nav-link.active::after {
+    width: 100%;
+}
+
+.portfolio-navbar .nav-link:hover,
+.portfolio-navbar .nav-link.active {
+    color: #fff !important;
+}
+
+
+.nav-social {
+    display: flex;
+    gap: 14px;
+}
+
+.nav-social a {
+    color: #cfd3ff;
+    font-size: 16px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.3s;
+}
+
+.nav-social a:hover {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #fff;
+}
+
+.portfolio-offcanvas {
+    width: 100%;
+    max-width: 340px;
+    background: #0f0c29fd;
+    color: #fff;
+    border-right: 2px solid var(--secondary-color) !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+}
+
+.portfolio-offcanvas .logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.offcanvas-header-custom {
+    padding: 20px 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.offcanvas-header-custom .logo img {
+    height: 38px;
+}
+
+.offcanvas-header .btn-close {
+    color: var(--white) !important;
+}
+
+.offcanvas-body-custom {
+    padding: 32px 24px;
+}
+
+.offcanvas-nav-left {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.offcanvas-nav-left .nav-link {
+    position: relative;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 800;
+    color: #ffffff !important;
+    transition: 0.3s ease;
+}
+
+.offcanvas-nav-left .nav-link:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.25),
+            transparent);
+    opacity: 0.5;
+}
+
+.offcanvas-nav-left .nav-link::before {
+    content: "";
+    position: absolute;
+    left: -14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 0%;
+    background: var(--secondary-color);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.offcanvas-nav-left .nav-link:hover,
+.offcanvas-nav-left .nav-link.active {
+    color: var(--secondary-color) !important;
+    padding-left: 8px;
+}
+
+.offcanvas-nav-left .nav-link:hover::before,
+.offcanvas-nav-left .nav-link.active::before {
+    height: 70%;
+}
+
+.offcanvas-nav-left .get-started-btn {
+    align-self: flex-start;
+}
+
+.offcanvas-footer-left {
+    padding: 20px 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.offcanvas-footer-left p {
+    font-size: 14px;
+    opacity: 0.85;
+    margin-bottom: 12px;
+}
+
+.offcanvas-social {
+    display: flex;
+    gap: 12px;
+}
+
+.offcanvas-social a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    transition: 0.3s;
+}
+
+.offcanvas-social a:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+.floating-menu {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    padding: 14px 26px;
+
+    background: linear-gradient(135deg,
+            rgba(15, 12, 41, 0.95),
+            rgba(48, 43, 99, 0.95));
+    backdrop-filter: blur(16px);
+
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.45),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+
+    transition: all 0.3s ease;
+}
+
+.floating-menu a {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+
+    min-width: 48px;
+
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    opacity: 0.65;
+
+    transition: all 0.25s ease;
+}
+
+.floating-menu span {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    opacity: 0.8;
+}
+
+.floating-menu a:hover,
+.floating-menu a.active {
+    opacity: 1;
+    color: var(--secondary-color);
+    transform: translateY(-6px) scale(1.05);
+}
+
+.floating-menu a::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+
+    background: var(--secondary-color);
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.25s ease;
+}
+
+.floating-menu a.active::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.floating-menu a.active svg,
+.floating-menu a:hover svg {
+    filter: drop-shadow(0 0 10px rgba(255, 80, 120, 0.6));
 }

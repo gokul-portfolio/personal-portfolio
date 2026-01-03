@@ -1,14 +1,76 @@
-@media screen and (max-width:1600px) {}
+@media screen and (max-width:1600px) {
+    .container-fluid {
+        width: 85%;
+    }
+}
 
-@media screen and (max-width:1440px) {}
+@media screen and (max-width:1440px) {
+    .container-fluid {
+        width: 90%;
+    }
+}
 
-@media screen and (max-width:1199px) {}
+@media screen and (max-width:1199px) {
+    .container-fluid {
+        width: 95%;
+    }
 
-@media screen and (max-width:991px) {}
+    .get-started-btn {
+        padding: 5px 0px 4px 22px;
+    }
 
-@media screen and (max-width:767px) {}
+    .get-started-btn .btn-arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
 
-@media screen and (max-width:575px) {}
+    .portfolio-navbar .nav-link {
+        font-size: 15px;
+    }
+
+    .portfolio-navbar .logo img {
+        height: 33px;
+    }
+}
+
+@media screen and (max-width:991px) {
+
+    .container-fluid {
+        width: 98%;
+    }
+
+    .portfolio-navbar .container-fluid {
+        width: 92%;
+    }
+
+    .portfolio-navbar .logo img {
+        height: 35px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .portfolio-navbar .logo img {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .floating-menu {
+        bottom: 16px;
+        gap: 20px;
+        padding: 12px 18px;
+    }
+
+    .floating-menu a {
+        font-size: 15px;
+        min-width: 38px;
+    }
+
+    .floating-menu span {
+        font-size: 10px;
+    }
+}
 
 @media screen and (max-width:425px) {}
 
