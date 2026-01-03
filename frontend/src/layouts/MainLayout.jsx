@@ -25,9 +25,9 @@ const MainLayout = () => {
                 <Outlet />
             </main>
 
-            {/* <Footer /> */}
+            <Footer />
 
-            <FloatingMenu visible={showFloatingMenu} />
+            {/* <FloatingMenu visible={showFloatingMenu} /> */}
         </>
     );
 };

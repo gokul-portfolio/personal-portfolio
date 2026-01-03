@@ -32,12 +32,30 @@
     .portfolio-navbar .logo img {
         height: 33px;
     }
+
+    .service-card {
+        flex: 0 0 auto;
+        width: 270px;
+    }
+
+    .main-head {
+        font-size: 36px;
+    }
+
+    .bi-text-scroll-item-1 h3 {
+        font-size: 90px;
+    }
+
 }
 
 @media screen and (max-width:991px) {
 
     .container-fluid {
         width: 98%;
+    }
+
+    .main-head {
+        font-size: 32px;
     }
 
     .portfolio-navbar .container-fluid {
@@ -47,12 +65,88 @@
     .portfolio-navbar .logo img {
         height: 35px;
     }
+
+    .service-card {
+        width: 270px;
+    }
+
+    .service-content h4 {
+        font-size: 16px;
+    }
+
+    .service-arrow {
+        width: 28px;
+        height: 28px;
+    }
+
+    .service-arrow svg {
+        font-size: 16px;
+    }
+
+    .service-content {
+        left: 8px;
+    }
+
+    .bi-text-scroll-item-1 h3 {
+        font-size: 70px;
+    }
+
+    .services-inner {
+        padding: 20px 0px;
+    }
+
+    .bi-text-scroll-item-1 h3 {
+        font-weight: 100;
+    }
 }
 
 @media screen and (max-width:767px) {
     .portfolio-navbar .logo img {
         height: 30px;
     }
+
+    .footer-text {
+        max-width: 100%;
+    }
+
+    .mui-footer {
+        padding: 30px 0 30px;
+    }
+
+    .service-track {
+        animation-duration: 35s;
+    }
+
+    .service-card {
+        width: 240px;
+    }
+
+    .service-track {
+        gap: 20px;
+    }
+
+    .get-started-btn {
+        padding: 5px 0px 5px 19px;
+    }
+
+    .get-started-btn .btn-arrow {
+        width: 28px;
+        height: 28px;
+    }
+
+    .sub-head {
+        font-size: 12px;
+    }
+
+    .bi-text-scroll-item-1 h3 {
+        font-size: 40px;
+    }
+
+    .bi-text-scroll-item-1 h3::after {
+        width: 5px;
+        height: 5px;
+    }
+
 }
 
 @media screen and (max-width:575px) {
@@ -60,6 +154,18 @@
         bottom: 16px;
         gap: 20px;
         padding: 12px 18px;
+    }
+
+    .main-head {
+        font-size: 26px;
+    }
+
+    .header-wrap-1-right {
+        margin-top: 10px;
+    }
+
+    .services-inner .container-fluid .header-wrap-1 {
+        width: 97%;
     }
 
     .floating-menu a {
@@ -70,9 +176,46 @@
     .floating-menu span {
         font-size: 10px;
     }
+
+    .service-card {
+        width: 200px;
+    }
+
+    .service-arrow {
+        width: 20px;
+        height: 20px;
+    }
+
+    .service-arrow svg {
+        font-size: 16px;
+    }
+
+    .service-track {
+        gap: 12px;
+    }
+
+    .service-content h4 {
+        font-size: 14px;
+    }
+
+    .services-inner {
+        padding: 20px 0px;
+    }
+
+    .bi-text-scroll-item-1 h3 {
+        font-size: 30px;
+    }
+
+    .service-sec {
+        margin: 0px 0px;
+    }
 }
 
-@media screen and (max-width:425px) {}
+@media screen and (max-width:425px) {
+    .bi-text-scroll-item-1 h3 {
+        font-size: 20px;
+    }
+}
 
 @media screen and (max-width:375px) {}
 
