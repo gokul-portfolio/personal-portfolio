@@ -2,12 +2,25 @@
     .container-fluid {
         width: 85%;
     }
+
+
 }
 
 @media screen and (max-width:1440px) {
     .container-fluid {
         width: 90%;
     }
+
+    .falling-pill {
+        font-size: 13px;
+        padding: 10px 14px;
+    }
+
+    .inner-projects .container-fluid {
+        width: 80%;
+    }
+
+
 }
 
 @media screen and (max-width:1199px) {
@@ -44,6 +57,42 @@
 
     .bi-text-scroll-item-1 h3 {
         font-size: 90px;
+    }
+
+    .inner-projects .container-fluid {
+        width: 95%;
+    }
+
+    .skill-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .skill-icon img {
+        width: 30px;
+    }
+
+    .why-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .why-left img {
+        width: 80%;
+    }
+
+    .why-right .main-head {
+        font-size: 28px;
+    }
+
+    .why-desc {
+        font-size: 14px;
+    }
+
+    .why-point {
+        gap: 8px;
+        font-size: 14px;
     }
 
 }
@@ -98,6 +147,57 @@
     .bi-text-scroll-item-1 h3 {
         font-weight: 100;
     }
+
+    .pills-inner img {
+        width: 90px;
+        height: auto;
+    }
+
+    .sub-main-1::after {
+        right: 38%;
+    }
+
+    .inner-projects .container-fluid {
+        width: 100%;
+    }
+
+    .project-card {
+        padding: 0px;
+    }
+
+    .inner-projects {
+        padding: 10px 0px;
+    }
+
+    .project-pagination button {
+        padding: 5px 10px;
+    }
+
+    .skills-wrap {
+        gap: 20px;
+    }
+
+    .why-right {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+
+    .why-points {
+        gap: 16px 14px;
+    }
+
+    .inner-aboutus {
+        padding: 20px 0;
+    }
+
+    .aboutus-left {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .aboutus-left .main-head {
+        font-size: 32px;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -142,9 +242,52 @@
         font-size: 40px;
     }
 
+
+    .bi-text-scroll-item-1 h3 {
+        font-size: 64px;
+        letter-spacing: 1.5px;
+        margin: 0 40px 0 16px;
+    }
+
     .bi-text-scroll-item-1 h3::after {
-        width: 5px;
-        height: 5px;
+        width: 10px;
+        height: 10px;
+        right: -24px;
+    }
+
+    .sub-main-1::after {
+        right: 31%;
+    }
+
+    .skill-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .skill-icon img {
+        width: 26px;
+    }
+
+    .bg-header {
+        font-size: 32px;
+    }
+
+    .skills-wrap {
+        gap: 15px;
+    }
+
+    .why-points {
+        gap: 8px 8px;
+    }
+
+    .aboutus-right img {
+        width: 60%;
+    }
+
+    .aboutus-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }
@@ -209,14 +352,118 @@
     .service-sec {
         margin: 0px 0px;
     }
+
+    .pills-inner img {
+        width: 70px;
+        height: auto;
+    }
+
+    .falling-pill {
+        font-size: 10px;
+        padding: 8px 18px;
+    }
+
+    .sub-main-1::after {
+        right: 33%;
+    }
+
+    .sub-main-1::before,
+    .sub-main-1::after {
+        top: 50%;
+        width: 30px;
+    }
+
+    .sub-main-1::before {
+        left: 40%;
+    }
+
+    .sub-main-1::after {
+        right: 34%;
+    }
+
+    .project-card {
+        margin-top: 20px;
+    }
+
+    .project-img img {
+        width: 280px !important;
+    }
+
+    .skill-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skill-icon img {
+        width: 22px;
+    }
+
+    .inner-skills .container-fluid {
+        width: 100%;
+    }
+
+
+    .why-right .main-head {
+        font-size: 28px;
+    }
+
+    .why-point {
+        font-size: 12px;
+    }
+
+    .why-desc {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .why-left img {
+        width: 65%;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bi-text-scroll-item-1 h3::after {
+        width: 6px;
+        height: 6px;
+        right: -24px;
+    }
+
+    .notfound-title {
+        font-size: 64px;
+    }
+
+    .notfound-subtitle {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:425px) {
     .bi-text-scroll-item-1 h3 {
         font-size: 20px;
     }
+
+    .falling-pill {
+        font-size: 11px;
+        padding: 6px 14px;
+    }
+
+    .skill-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .skill-icon img {
+        width: 18px;
+    }
 }
 
-@media screen and (max-width:375px) {}
+@media screen and (max-width:375px) {
+    .why-points {
+        grid-template-columns: 1fr;
+    }
+}
 
 @media screen and (max-width:320px) {}

@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <>
       {/* ================= HEADER ================= */}
-      <Navbar expand="lg"  className="portfolio-navbar">
+      <Navbar expand="lg" className="portfolio-navbar">
         <Container fluid className="nav-wrapper">
 
           {/* LOGO */}
@@ -39,8 +39,9 @@ const Header = () => {
           <Nav className="nav-center d-none d-lg-flex align-items-center gap-4">
             <Nav.Link as={NavLink} to="/" end>Home</Nav.Link>
             <Nav.Link as={NavLink} to="/about">About</Nav.Link>
-            <Nav.Link as={NavLink} to="/projects">Services</Nav.Link>
-            <Nav.Link as={NavLink} to="/skills">Gallery</Nav.Link>
+            <Nav.Link as={NavLink} to="/services">Services</Nav.Link>
+            <Nav.Link as={NavLink} to="/projects">Projects</Nav.Link>
+            <Nav.Link as={NavLink} to="/gallery">Gallery</Nav.Link>
           </Nav>
 
           {/* RIGHT SIDE (DESKTOP) */}
@@ -64,7 +65,7 @@ const Header = () => {
 
             {/* CTA BUTTON */}
             <Button to="/contact" icon={<HiArrowRight />}>
-              Get Started
+              Get Resume
             </Button>
           </div>
 
