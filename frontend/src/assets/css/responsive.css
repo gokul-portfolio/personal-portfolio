@@ -3,6 +3,13 @@
         width: 85%;
     }
 
+    .about-sec-content .about-main-img img {
+        width: 600px;
+    }
+
+    .about-main-img {
+        bottom: -29%;
+    }
 
 }
 
@@ -20,7 +27,13 @@
         width: 80%;
     }
 
+    .about-sec-content .about-main-img img {
+        width: 500px;
+    }
 
+    .about-main-img {
+        bottom: -22%;
+    }
 }
 
 @media screen and (max-width:1199px) {
@@ -93,6 +106,31 @@
     .why-point {
         gap: 8px;
         font-size: 14px;
+    }
+
+    .about-box {
+        position: absolute;
+        left: 0%;
+    }
+
+    .about-box::before {
+        left: 14px;
+    }
+
+    .about-sec .experience-box {
+        right: 3%;
+    }
+
+    .about-social {
+        right: 3%;
+    }
+
+    .about-sec-content .about-main-img img {
+        width: 420px;
+    }
+
+    .about-main-img {
+        bottom: -18%;
     }
 
 }
@@ -198,6 +236,30 @@
     .aboutus-left .main-head {
         font-size: 32px;
     }
+
+    .about-sec-content .about-main-img img {
+        width: 380px;
+    }
+
+    .about-box {
+        top: 15%;
+    }
+
+    .inner-why-choose {
+        padding: 30px 0;
+    }
+
+    .project-detail-left {
+        position: static;
+    }
+
+    .project-detail-right {
+        padding-left: 0;
+    }
+
+    .project-meta {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -289,6 +351,41 @@
         justify-content: center;
         align-items: center;
     }
+
+    .about-box {
+        top: 24%;
+    }
+
+    .about-sec .main-head {
+        font-size: 28px;
+    }
+
+    .about-box svg {
+        font-size: 50px;
+    }
+
+    .about-sec-content .about-main-img img {
+        width: 300px;
+    }
+
+    .about-sec {
+        height: 700px;
+    }
+
+    .why-card .icon {
+        top: 10px;
+        right: 5%;
+        width: 48px;
+        height: 48px;
+        font-size: 18px;
+    }
+
+    .service-accordion .accordion-button {
+        padding: 14px 28px;
+        font-size: 18px;
+
+    }
+
 
 }
 
@@ -438,6 +535,70 @@
     .notfound-subtitle {
         font-size: 20px;
     }
+
+    .about-sec-content .about-main-img img {
+        width: 250px;
+    }
+
+    .about-sec {
+        height: 750px;
+    }
+
+    .about-main-img {
+        left: 30%;
+        bottom: -11%;
+    }
+
+    .social-list li a {
+        width: 38px;
+        height: 38px;
+    }
+
+    .social-list li a {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .about-box {
+        top: 31%;
+    }
+
+    .about-box p:first-child span {
+        font-size: 40px;
+    }
+
+    .about-sec .experience-box {
+        right: 3%;
+        top: 23%;
+    }
+
+    .about-sec .main-head {
+        font-size: 22px;
+    }
+
+    .about-head-wrap .main-head {
+        font-size: 21px;
+    }
+
+    .about-box::before {
+        left: 3px;
+    }
+
+    .why-card p {
+        font-size: 13px;
+    }
+
+    .service-accordion .accordion-button {
+        padding: 10px 20px;
+        font-size: 15px;
+
+    }
+
+    .service-accordion .accordion-button span {
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (max-width:425px) {
@@ -457,6 +618,18 @@
 
     .skill-icon img {
         width: 18px;
+    }
+
+    .about-box {
+        padding: 15px 15px;
+    }
+
+    .about-sec .main-head {
+        font-size: 22px;
+    }
+
+    .about-main-img {
+        bottom: -7%;
     }
 }
 

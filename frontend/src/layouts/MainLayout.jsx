@@ -36,7 +36,7 @@ const MainLayout = () => {
             <Footer />
 
             {/* Floating Menu (optional) */}
-            <FloatingMenu visible={showFloatingMenu} />
+            {/* <FloatingMenu visible={showFloatingMenu} /> */}
 
             {/* Scroll To Top Button */}
             <ScrollToTop />
