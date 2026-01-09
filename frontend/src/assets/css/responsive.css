@@ -11,11 +11,24 @@
         bottom: -29%;
     }
 
+    .main-head {
+        font-size: 38px;
+    }
+
 }
 
 @media screen and (max-width:1440px) {
     .container-fluid {
         width: 90%;
+    }
+
+    .marquee-track {
+        gap: 20px;
+    }
+
+    .get-started-btn {
+        gap: 10px;
+        padding: 5px 0px 5px 18px;
     }
 
     .falling-pill {
@@ -33,6 +46,10 @@
 
     .about-main-img {
         bottom: -22%;
+    }
+
+    .main-head {
+        font-size: 36px;
     }
 }
 
@@ -70,6 +87,10 @@
 
     .bi-text-scroll-item-1 h3 {
         font-size: 90px;
+    }
+
+    .marquee-track {
+        gap: 10px;
     }
 
     .inner-projects .container-fluid {
@@ -133,6 +154,10 @@
         bottom: -18%;
     }
 
+    .parent-overlay-box-2 {
+        top: 25%;
+        right: 4%;
+    }
 }
 
 @media screen and (max-width:991px) {
@@ -260,6 +285,77 @@
     .project-meta {
         grid-template-columns: 1fr;
     }
+
+    .project-main .round-head {
+        font-size: 14px;
+    }
+
+    .project-main p {
+        font-size: 15px;
+    }
+
+    .project-main .main-head {
+        font-size: 26px;
+    }
+
+    .project-overlay-content {
+        padding: 15px;
+    }
+
+    .project-overlay-content h2 {
+        font-size: 18px;
+    }
+
+    .project-show-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-main-tag {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+
+    .service-parent {
+        height: 600px;
+    }
+
+    .parent-wrap .parent-overlay-box-1 img {
+        width: 300px;
+    }
+
+    .parent-wrap .parent-overlay-box-1 {
+        bottom: -11%;
+    }
+
+    .parent-overlay-box-2 {
+        top: 35%;
+        right: 4%;
+    }
+
+    .parent-overlay-box-3 {
+        top: 30%;
+        left: 6%;
+    }
+
+    .parent-overlay-box-4 {
+        top: 50%;
+        left: 6%;
+    }
+
+    .parent-overlay-box-2 {
+        padding-right: 15px;
+        max-width: 270px;
+    }
+
+    .parent-overlay-box-2 h4 {
+        font-size: 18px;
+    }
+
+    .parent-overlay-box-2 p {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -352,6 +448,15 @@
         align-items: center;
     }
 
+    .marquee-track span {
+        color: #fff;
+        font-size: 13px;
+    }
+
+    .marquee-track {
+        gap: 2px;
+    }
+
     .about-box {
         top: 24%;
     }
@@ -383,10 +488,70 @@
     .service-accordion .accordion-button {
         padding: 14px 28px;
         font-size: 18px;
-
     }
 
+    .project-main-tab .tab-buttons {
+        display: none;
+    }
 
+    .project-main-tab .tab-dropdown {
+        display: block;
+    }
+
+    .project-btn-wrap {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .project-overlay-content h2 {
+        font-size: 16px;
+    }
+
+    .project-overlay-content p {
+        font-size: 12px;
+    }
+
+    .project-show-inner {
+        padding: 10px 0px;
+    }
+
+    .parent-wrap .parent-overlay-box-1 img {
+        width: 180px;
+    }
+
+    .service-parent {
+        height: 500px;
+    }
+
+    .parent-wrap .parent-overlay-box-1 {
+        bottom: -2%;
+    }
+
+    .parent-overlay-box-3 {
+        top: 45%;
+        left: 3%;
+        width: 140px;
+        height: 80px;
+        padding: 12px 15px;
+    }
+
+    .parent-overlay-box-4 {
+        top: 65%;
+        left: 3%;
+        width: 140px;
+        height: 80px;
+        padding: 12px 15px;
+    }
+
+    .service-counter {
+        font-size: 24px;
+    }
+
+    .parent-overlay-box-2 {
+        top: 35%;
+        right: 1%;
+    }
 }
 
 @media screen and (max-width:575px) {
@@ -599,6 +764,48 @@
         font-size: 14px;
     }
 
+    .project-main .round-head {
+        font-size: 12px;
+    }
+
+    .project-main p {
+        font-size: 14px;
+    }
+
+    .project-main .main-head {
+        font-size: 22px;
+    }
+
+    .get-started-btn {
+        font-size: 13px;
+        padding: 5px 0px 5px 19px;
+    }
+
+    .parent-wrap .parent-overlay-box-1 img {
+        width: 180px;
+    }
+
+    .service-parent {
+        height: 510px;
+    }
+
+    .parent-overlay-box-3 {
+        width: 140px;
+        height: 80px;
+    }
+
+    .parent-overlay-box-4 {
+        width: 140px;
+        height: 80px;
+    }
+
+    .service-counter {
+        font-size: 20px;
+    }
+
+    .parent-overlay-box-2 {
+        top: 26%;
+    }
 }
 
 @media screen and (max-width:425px) {
@@ -631,11 +838,40 @@
     .about-main-img {
         bottom: -7%;
     }
+
+    .main-head {
+        font-size: 22px;
+    }
+
+    .get-started-btn {
+        font-size: 11px;
+    }
+
+    .parent-overlay-box-2 p {
+        font-size: 10px;
+    }
+
+    .parent-overlay-box-2 h4 {
+        font-size: 16px;
+    }
+
+    .parent-wrap .parent-overlay-box-1 {
+        left: 59%;
+    }
+
+    .parent-overlay-box-2 {
+        top: 28%;
+    }
 }
 
 @media screen and (max-width:375px) {
     .why-points {
         grid-template-columns: 1fr;
+    }
+
+    .parent-wrap .parent-overlay-box-1 {
+        bottom: 8%;
+        left: 63%;
     }
 }
 
