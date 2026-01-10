@@ -15,6 +15,14 @@
         font-size: 38px;
     }
 
+    .cta-overlay-1 img {
+        width: 700px;
+    }
+
+    .cta-inner-1 {
+        height: 500px;
+    }
+
 }
 
 @media screen and (max-width:1440px) {
@@ -24,6 +32,14 @@
 
     .marquee-track {
         gap: 20px;
+    }
+
+    .cta-inner-1 {
+        height: 450px;
+    }
+
+    .cta-overlay-1 img {
+        width: 600px;
     }
 
     .get-started-btn {
@@ -50,6 +66,11 @@
 
     .main-head {
         font-size: 36px;
+    }
+
+
+    .text-overlay h3 {
+        font-size: 80px;
     }
 }
 
@@ -89,6 +110,15 @@
         font-size: 90px;
     }
 
+    .cta-inner-1 {
+        height: 380px;
+    }
+
+    .cta-overlay-1 {
+        position: absolute;
+        top: 28%;
+    }
+
     .marquee-track {
         gap: 10px;
     }
@@ -120,6 +150,10 @@
         font-size: 28px;
     }
 
+    .cta-overlay-1 img {
+        width: 500px;
+    }
+
     .why-desc {
         font-size: 14px;
     }
@@ -136,6 +170,10 @@
 
     .about-box::before {
         left: 14px;
+    }
+
+    .cta-overlay-content-1 {
+        top: 100%;
     }
 
     .about-sec .experience-box {
@@ -157,6 +195,10 @@
     .parent-overlay-box-2 {
         top: 25%;
         right: 4%;
+    }
+
+    .text-overlay h3 {
+        font-size: 50px;
     }
 }
 
@@ -182,8 +224,22 @@
         width: 270px;
     }
 
+    .text-overlay {
+        right: 20px;
+        bottom: 0px;
+        z-index: -1;
+    }
+
+    .gallery-tabs-wrapper {
+        padding: 40px 0;
+    }
+
     .service-content h4 {
         font-size: 16px;
+    }
+
+    .cta-overlay-1 img {
+        width: 400px;
     }
 
     .service-arrow {
@@ -201,6 +257,10 @@
 
     .bi-text-scroll-item-1 h3 {
         font-size: 70px;
+    }
+
+    .text-overlay h3 {
+        font-size: 40px;
     }
 
     .services-inner {
@@ -356,6 +416,10 @@
     .parent-overlay-box-2 p {
         font-size: 12px;
     }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -405,6 +469,10 @@
         font-size: 64px;
         letter-spacing: 1.5px;
         margin: 0 40px 0 16px;
+    }
+
+    .text-overlay h3 {
+        font-size: 30px;
     }
 
     .bi-text-scroll-item-1 h3::after {
@@ -552,6 +620,80 @@
         top: 35%;
         right: 1%;
     }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-popup img {
+        max-width: 90%;
+        max-height: 65vh;
+    }
+
+    .gallery-popup .nav {
+        font-size: 42px;
+    }
+
+    .gallery-tabs-wrapper .desktop-tabs {
+        display: none;
+    }
+
+    .gallery-tabs-wrapper .mobile-tabs {
+        display: block;
+    }
+
+    .gallery-dropdown {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+        position: relative;
+    }
+
+    /* SELECT */
+    .gallery-dropdown select {
+        width: 100%;
+        max-width: 320px;
+        padding: 14px 48px 14px 18px;
+        border-radius: 14px;
+        border: 1px solid rgba(22, 23, 41, 0.25);
+        font-size: 15px;
+        font-weight: 600;
+        color: #161729;
+        background-color: #fff;
+        cursor: pointer;
+
+        /* remove default arrow */
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* CUSTOM ARROW (PERFECT CENTER RIGHT) */
+    .gallery-dropdown::after {
+        content: "⌄";
+        position: absolute;
+        right: 20px;
+        /* ✅ always correct */
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 18px;
+        color: #ff2e2e;
+        pointer-events: none;
+    }
+
+    /* HOVER */
+    .gallery-dropdown select:hover {
+        border-color: #1e3cff;
+    }
+
+    .gallery-dropdown select:focus {
+        outline: none;
+        border-color: transparent;
+        box-shadow: 0 0 0 3px rgba(30, 60, 255, 0.2);
+    }
+
 }
 
 @media screen and (max-width:575px) {
@@ -567,6 +709,14 @@
 
     .header-wrap-1-right {
         margin-top: 10px;
+    }
+
+    .text-overlay h3 {
+        font-size: 24px;
+    }
+
+    .gallery-dropdown select {
+        padding: 5px 48px 5px 18px;
     }
 
     .services-inner .container-fluid .header-wrap-1 {

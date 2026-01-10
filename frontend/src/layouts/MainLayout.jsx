@@ -25,21 +25,23 @@ const MainLayout = () => {
     return (
         <>
             {/* Header */}
-            <Header />
+            {/* <Header /> */}
 
             {/* Page Content */}
             <main className="main-content">
+
                 <Outlet />
+                
             </main>
 
             {/* Footer */}
-            <Footer />
+            {/* <Footer /> */}
 
             {/* Floating Menu (optional) */}
             {/* <FloatingMenu visible={showFloatingMenu} /> */}
 
             {/* Scroll To Top Button */}
-            <ScrollToTop />
+            {/* <ScrollToTop /> */}
         </>
     );
 };

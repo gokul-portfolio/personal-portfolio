@@ -16,10 +16,10 @@ import NotFound from "./pages/NotFound";
 function App() {
     return (
 
-
-
         <Routes>
+            
             <Route element={<MainLayout />}>
+                
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
@@ -27,10 +27,12 @@ function App() {
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/projectdetail" element={<ProjectDetail />} />
+
             </Route>
 
             {/* Fallback */}
             <Route path="*" element={<NotFound />} />
+            
         </Routes>
 
     );
