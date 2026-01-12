@@ -6,11 +6,9 @@ import CtaSection from '../components/home/CtaSection'
 const GalleryPage = () => {
   return (
     <>
-      {/* <GalleryHead /> */}
 
+      <GalleryHead />
 
-
-      <CtaSection />
 
       
       <GalleryMain />

@@ -2101,7 +2101,7 @@ a:hover {
 }
 
 .service-accordion {
-    max-width: 900px;
+    max-width: 1200px;
 }
 
 .service-accordion .accordion-item {
@@ -2649,16 +2649,23 @@ a:hover {
 
 .project-overlay-content {
     position: absolute;
-    inset: 0;
-    padding: 28px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 45%;
+    /* adjust how tall the overlay should be */
+    padding: 24px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background: linear-gradient(180deg,
-            rgba(0, 0, 0, 0.15) 0%,
-            rgba(0, 0, 0, 0.85) 100%);
-    transition: background 0.4s ease;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.85) 0%,
+            rgba(0, 0, 0, 0.2) 70%,
+            rgba(0, 0, 0, 0) 100%);
+    color: #fff;
+    transition: height 0.3s ease;
 }
+
 
 .project-overlay-content h2 {
     font-size: 22px;
@@ -3353,6 +3360,28 @@ a:hover {
     text-align: center;
 }
 
-.cta-overlay-content-1 h2 span{
+.cta-overlay-content-1 h2 span {
     color: var(--secondary-color);
+}
+
+
+/*==================== testimonial =========================*/
+.testimonial-inner .container-fluid{
+    width: 100% !important;
+}
+.testimonial-inner {
+    width: 100%;
+    padding: 40px 0px 0px 0;
+}
+
+.testimonial-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-img {
+    width: 50%;
+    display: block;
 }

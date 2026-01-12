@@ -8,9 +8,10 @@ const ServicesPage = () => {
     <>
 
       {/* service banner */}
-      {/* <ServiceTop /> */}
-      {/* <Service /> */}
+      <ServiceTop />
 
+
+      <Service />
 
       <ServiceMain />
 
