@@ -24,6 +24,8 @@ const MainLayout = () => {
     }, []);
 
     return (
+
+        
         <>
             {/* Header */}
             <Header />
@@ -34,7 +36,7 @@ const MainLayout = () => {
             <main className="main-content">
 
                 <Outlet />
-                
+    
             </main>
 
             {/* Footer */}

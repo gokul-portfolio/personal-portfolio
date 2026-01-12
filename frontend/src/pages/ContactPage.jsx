@@ -1,10 +1,13 @@
 import React from 'react'
+import Testimonial from '../components/home/Testimonial'
 
 const ContactPage = () => {
     return (
-        <div>
-            Contact Us
-        </div>
+
+        <>
+            <Testimonial />
+        </>
+
     )
 }
 

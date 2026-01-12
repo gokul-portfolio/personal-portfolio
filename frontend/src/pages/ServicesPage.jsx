@@ -10,10 +10,10 @@ const ServicesPage = () => {
       {/* service banner */}
       <ServiceTop />
 
-      
+
       <Service />
 
-
+      <ServiceMain />
 
     </>
   )

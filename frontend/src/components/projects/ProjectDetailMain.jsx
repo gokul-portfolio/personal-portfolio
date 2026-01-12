@@ -1,19 +1,35 @@
 import React from "react";
-import projectImage from "../../assets/images/layout/layout-1.webp";
+import { useParams } from "react-router-dom";
+import projects from "../../data/projects";
+
 import {
     FaReact,
     FaJsSquare,
     FaBootstrap,
     FaCss3Alt,
-    FaHtml5
+    FaHtml5,
 } from "react-icons/fa";
 
 import { BsCaretRightFill } from "react-icons/bs";
 import { HiArrowRight } from "react-icons/hi";
-
 import Button from "../common/Button";
 
+const techIcons = {
+    React: <FaReact />,
+    JavaScript: <FaJsSquare />,
+    Bootstrap: <FaBootstrap />,
+    CSS: <FaCss3Alt />,
+    HTML: <FaHtml5 />,
+};
+
 const ProjectMain = () => {
+    const { slug } = useParams();
+
+    const project = projects.find((item) => item.slug === slug);
+
+    if (!project) {
+        return <h2 className="text-center mt-5">Project Not Found</h2>;
+    }
 
     return (
         <section>
@@ -21,88 +37,84 @@ const ProjectMain = () => {
                 <div className="container-fluid">
                     <div className="row align-items-start">
 
+                        {/* LEFT IMAGE */}
                         <div className="col-lg-5 col-md-5 mt-3">
-                            <div className="project-detail-left  sticky-js">
+                            <div className="project-detail-left sticky-js">
                                 <img
-                                    src={projectImage}
+                                    src={project.mainimg}
                                     className="img-fluid"
-                                    alt="Project Layout"
+                                    alt={project.title}
                                 />
                             </div>
                         </div>
 
+                        {/* RIGHT CONTENT */}
                         <div className="col-lg-7 col-md-7 mt-3">
                             <div className="project-detail-right">
 
-                                <span className="project-tag">Web Development</span>
+                                <span className="project-tag">{project.category}</span>
 
-                                <h2 className="main-head">
-                                    Portfolio Website for a Web Developer
-                                </h2>
+                                <h2 className="main-head">{project.title}</h2>
 
                                 <p className="para">
-                                    <BsCaretRightFill /> A modern, responsive portfolio website
-                                    designed and developed to showcase projects, services, and
-                                    technical expertise with clean UI and smooth interactions.
+                                    <BsCaretRightFill /> {project.description}
                                 </p>
 
                                 <p className="para">
-                                    <BsCaretRightFill /> Built with performance, scalability, and
-                                    SEO-friendly structure to ensure fast loading and better
-                                    visibility across search engines.
+                                    <BsCaretRightFill /> {project.longDescription}
                                 </p>
 
                                 {/* META */}
                                 <div className="project-meta mt-3">
                                     <div className="meta-item">
                                         <h4>Client</h4>
-                                        <p>Personal Project</p>
+                                        <p>{project.client}</p>
                                     </div>
 
                                     <div className="meta-item">
                                         <h4>Category</h4>
-                                        <p>Web Development</p>
+                                        <p>{project.category}</p>
                                     </div>
 
                                     <div className="meta-item">
                                         <h4>Duration</h4>
-                                        <p>3 Weeks</p>
+                                        <p>{project.duration}</p>
                                     </div>
 
                                     <div className="meta-item">
                                         <h4>Status</h4>
-                                        <p>Completed</p>
+                                        <p>{project.status}</p>
                                     </div>
                                 </div>
 
                                 {/* FEATURES */}
                                 <div className="project-features">
                                     <h3 className="project-header">Key Features</h3>
+
                                     <ul>
-                                        <li>Modern and clean UI design</li>
-                                        <li>Fully responsive across all devices</li>
-                                        <li>Optimized for performance and SEO</li>
-                                        <li>Smooth animations and interactions</li>
-                                        <li>Scalable and maintainable codebase</li>
+                                        {project.features.map((feature, index) => (
+                                            <li key={index}>{feature}</li>
+                                        ))}
                                     </ul>
                                 </div>
+
 
                                 {/* TECHNOLOGIES */}
                                 <div className="project-tech">
                                     <h3 className="project-header">Technologies Used</h3>
                                     <div className="tech-list">
-                                        <span><FaReact /> React.js</span>
-                                        <span><FaJsSquare /> JavaScript (ES6+)</span>
-                                        <span><FaBootstrap /> Bootstrap</span>
-                                        <span><FaCss3Alt /> CSS3</span>
-                                        <span><FaHtml5 /> HTML5</span>
+                                        {project.tech.map((tech, index) => (
+                                            <span key={index}>
+                                                {techIcons[tech]} {tech}
+                                            </span>
+                                        ))}
                                     </div>
                                 </div>
 
                                 {/* ACTION */}
                                 <div className="project-actions">
-                                    <Button to="/contact" icon={<HiArrowRight />}>
-                                        View   Demo
+                                    <Button to={project.liveUrl} icon={<HiArrowRight />}>
+                                        View Demo
                                     </Button>
                                 </div>
 

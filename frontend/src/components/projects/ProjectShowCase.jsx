@@ -18,8 +18,8 @@ const ProjectShowCase = () => {
                 <Container fluid>
                     <div className="project-show-head">
 
-                        <Row className=" align-items-end">
-                            <Col lg={9} md={8} sm={8} >
+                        <Row className="align-items-end">
+                            <Col lg={9} md={8} sm={8}>
                                 <h4 className="sub-head">Project Showcase</h4>
                                 <h2 className="main-head">
                                     Selected Projects <br />
@@ -35,8 +35,6 @@ const ProjectShowCase = () => {
                         </Row>
 
                     </div>
-
-
 
                     <div className="project-main-tab d-flex flex-column align-items-center">
 
@@ -73,30 +71,20 @@ const ProjectShowCase = () => {
                                 <option value="page3">Posters & Branding</option>
                             </Form.Select>
                         </div>
-
                     </div>
 
-
                     {activeTab === "page1" && (
-                        <>
-                                <ProjectCards />
-
-                        </>
+                        <ProjectCards category="web" />
                     )}
+
                     {activeTab === "page2" && (
-                        <>
-                                <ProjectCards />
-
-                        </>
+                        <ProjectCards category="uiux" />
                     )}
+
                     {activeTab === "page3" && (
-                        <>
-                                <ProjectCards />
-
-                        </>
+                        <ProjectCards category="branding" />
                     )}
 
-                    
                 </Container>
             </div>
         </>
