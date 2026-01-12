@@ -1,33 +1,41 @@
 import React from 'react'
 
-
+import Services from "../components/home/Services"
+import Pill from "../components/home/Pills"
+import TestMarque from '../components/common/TestMarque'
+import Project from '../components/home/Project'
+import Skills from '../components/home/Skills'
+import WhyChoose from '../components/home/WhyChoose'
+import Aboutus from '../components/home/Aboutus'
 const HomePage = () => {
   return (
-    <section className="container py-5 text-center">
-      <h1 className="mb-3">
-        Hi, I’m <span className="text-primary">Gokul</span> 👋
-      </h1>
 
-      <h4 className="text-muted mb-4">
-        Frontend Developer | React Developer
-      </h4>
+    <div className='Page-wrap'>
 
-      <p className="mx-auto mb-4" style={{ maxWidth: "600px" }}>
-        I build clean, responsive, and user-friendly web applications using
-        modern frontend technologies. Passionate about learning and creating
-        real-world projects.
-      </p>
+      {/* about us */}
+      <Aboutus />
 
-      <div className="d-flex justify-content-center gap-3">
-        <a href="/projects" className="btn btn-primary">
-          View Projects
-        </a>
-        <a href="/contact" className="btn btn-outline-secondary">
-          Contact Me
-        </a>
-      </div>
-    </section>
-  );
-};
+      {/* text marque */}
+      <TestMarque />
+      
+      {/* skills */}
+      <Skills />
 
-export default HomePage;
+
+      {/* services section */}
+      <Services />
+
+      {/* why choose us */}
+      <WhyChoose />
+
+      {/* pills section */}
+      <Pill />
+
+      {/* projeccts */}
+      <Project />
+
+    </div>
+  )
+}
+
+export default HomePage
