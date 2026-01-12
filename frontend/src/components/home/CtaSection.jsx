@@ -13,17 +13,21 @@ const CtaSection = () => {
                 </div>
 
                 <div className="cta-overlay-content-1">
-                    <h2 className='main-head'>Lorem, <span> ipsum </span> dolor.</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Odio ut delectus obcaecati, impedit illum
-                        dolor perspiciatis quae inventore recusandae
-                        provident dolorum quis aspernatur deleniti
-                        eaque quasi ratione. Cum, aliquid quidem.</p>
+                    <h2 className='main-head'>
+                        Ready to <span>Grow Your Business</span> With Us?
+                    </h2>
 
-                    <Button to={"/contact"} icon={<HiArrowRight />} >
-                        contact Now
+                    <p>
+                        We help brands build powerful digital experiences that drive results.
+                        From strategy to execution, our team delivers solutions designed to
+                        scale your business and maximize impact.
+                    </p>
+
+                    <Button to={"/contact"} icon={<HiArrowRight />}>
+                        Contact Us Today
                     </Button>
                 </div>
+
             </div>
         </>
     )

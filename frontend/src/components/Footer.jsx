@@ -1,89 +1,57 @@
 import React from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaXTwitter,
-  FaYoutube,
-  FaDiscord,
-} from "react-icons/fa6";
-
-import Logo from "../assets/images/logo.png";
+import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedin, FaXTwitter, FaHeart } from "react-icons/fa6";
+import Logo from "../assets/images/favicon.png";
 
 const Footer = () => {
   return (
     <footer className="mui-footer">
       <Container fluid>
-        <Row className="gy-4">
 
-          <Col md={4} sm={12}>
-            <div className="footer-brand">
-              <img src={Logo} className="img-fluid mb-3" alt="Gokul Logo" />
+        {/* TOP */}
+        <Row className="align-items-center gy-3">
 
-              <h5>Stay Connected</h5>
-              <p className="footer-text">
-                Follow my journey as a Full-Stack Developer.  
-                I share projects, learnings, and updates. No spam.
+          {/* LEFT : BRAND */}
+          <Col md={6} sm={12}>
+            <div className="footer-brand d-flex align-items-center gap-3">
+              <img src={Logo} className="img-fluid" alt="Gokul Logo" />
+              <p className="footer-text mb-0">
+                I’m a Full-Stack Developer specializing in building clean,
+                scalable, and performance-driven web applications using
+                modern technologies.
               </p>
-
-             
             </div>
           </Col>
 
-          <Col md={2}  sm={6} xs={6} > 
-            <h6 className="footer-title">Skills</h6>
-            <ul className="footer-links">
-              <li>React.js</li>
-              <li>JavaScript (ES6+)</li>
-              <li>Node.js</li>
-              <li>MongoDB</li>
-              <li>REST APIs</li>
-            </ul>
-          </Col>
-
-          <Col md={2}  sm={6}  xs={6} >
-            <h6 className="footer-title">Projects</h6>
-            <ul className="footer-links">
-              <li>Portfolio Website</li>
-              <li>E-commerce App</li>
-              <li>Notes App (MERN)</li>
-              <li>Auth System (JWT)</li>
-              <li>Admin Dashboard</li>
-            </ul>
-          </Col>
-
-          <Col md={2}  sm={6}  xs={6} >
-            <h6 className="footer-title">Explore</h6>
-            <ul className="footer-links">
-              <li>About Me</li>
-              <li>Experience</li>
-              <li>Blog</li>
-              <li>Resume</li>
-              <li>Contact</li>
-            </ul>
-          </Col>
-
-          <Col md={2}  sm={6}  xs={6} >
-            <h6 className="footer-title">Connect</h6>
-            <ul className="footer-links">
-              <li>Email</li>
-              <li>LinkedIn</li>
-              <li>GitHub</li>
+          {/* RIGHT : NAV (ROUTER LINKS) */}
+          <Col md={6} sm={12}>
+            <ul className="footer-links d-flex justify-content-md-end justify-content-start gap-4 mb-0">
               <li>
-                Open to Work <span className="hiring">YES</span>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/projects">Projects</Link>
+              </li>
+              <li>
+                <Link to="/resume">Resume</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </Col>
 
         </Row>
 
-        {/* BOTTOM BAR */}
-        <div className="footer-bottom">
-          <p>
-            © {new Date().getFullYear()} Gokul — Full-Stack Developer
+        {/* BOTTOM */}
+        <div className="footer-bottom d-flex justify-content-between align-items-center mt-4 flex-wrap">
+          <p className="mb-0">
+            Designed & Developed by <strong>Gokul</strong> with{" "}
+            <FaHeart className="text-danger" />
           </p>
 
-          <div className="social-icons">
+          <div className="social-icons d-flex gap-3">
             <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">
               <FaGithub />
             </a>
@@ -93,14 +61,9 @@ const Footer = () => {
             <a href="https://twitter.com/yourusername" target="_blank" rel="noreferrer">
               <FaXTwitter />
             </a>
-            <a href="#">
-              <FaYoutube />
-            </a>
-            <a href="#">
-              <FaDiscord />
-            </a>
           </div>
         </div>
+
       </Container>
     </footer>
   );
