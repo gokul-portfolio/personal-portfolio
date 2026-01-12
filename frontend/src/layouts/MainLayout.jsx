@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FloatingMenu from "../layouts/FloatingMenu";
 import ScrollToTop from "../components/common/ScrollToTop";
+import ArrowCursor from "../components/common/ArrowCursor";
 
 const MainLayout = () => {
     const [showFloatingMenu, setShowFloatingMenu] = useState(false);
@@ -25,7 +26,9 @@ const MainLayout = () => {
     return (
         <>
             {/* Header */}
-            {/* <Header /> */}
+            <Header />
+
+            <ArrowCursor />
 
             {/* Page Content */}
             <main className="main-content">
@@ -35,13 +38,13 @@ const MainLayout = () => {
             </main>
 
             {/* Footer */}
-            {/* <Footer /> */}
+            <Footer />
 
             {/* Floating Menu (optional) */}
             {/* <FloatingMenu visible={showFloatingMenu} /> */}
 
             {/* Scroll To Top Button */}
-            {/* <ScrollToTop /> */}
+            <ScrollToTop />
         </>
     );
 };

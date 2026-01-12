@@ -24,10 +24,10 @@ const images = [
 
 // Tabs
 const tabs = [
-  { key: "all", label: "lorem" },
-  { key: "web", label: "lorem" },
-  { key: "ui", label: "lorem" },
-  { key: "branding", label: "lorem" },
+  { key: "all", label: "All" },
+  { key: "web", label: "Wen" },
+  { key: "ui", label: "UI/UX" },
+  { key: "branding", label: "Breanding" },
 ];
 
 const ITEMS_PER_PAGE = 8;
