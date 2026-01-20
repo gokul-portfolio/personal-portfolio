@@ -821,6 +821,14 @@
         top: 85%;
     }
 
+    .testimonial-card {
+        min-width: 260px;
+    }
+
+    .main-title {
+        font-size: 28px;
+    }
+
 }
 
 @media screen and (max-width:575px) {

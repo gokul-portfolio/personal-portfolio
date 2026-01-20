@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import clickSoundFile from "../../assets/sounds/click.wav";
 
 const Button = ({
     children,
@@ -7,12 +8,23 @@ const Button = ({
     className = "",
     icon,
 }) => {
-    
+
+    const playClickSound = () => {
+        const audio = new Audio(clickSoundFile);
+        audio.volume = 0.4;
+        audio.play();
+    };
+
+    const handleClick = (e) => {
+        playClickSound();
+        if (onClick) onClick(e);
+    };
+
     if (to) {
         return (
             <NavLink
                 to={to}
-                onClick={onClick}
+                onClick={handleClick}
                 className={`get-started-btn ${className}`}
             >
                 <span className="btn-text">{children}</span>
@@ -23,7 +35,7 @@ const Button = ({
 
     return (
         <button
-            onClick={onClick}
+            onClick={handleClick}
             className={`get-started-btn ${className}`}
         >
             <span className="btn-text">{children}</span>

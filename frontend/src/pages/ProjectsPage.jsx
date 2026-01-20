@@ -5,7 +5,7 @@ import ProjectShowCase from '../components/projects/ProjectShowCase'
 const ProjectsPage = () => {
   return (
     <>
-      <ProjectMain />
+      {/* <ProjectMain /> */}
 
       <ProjectShowCase />
     </>

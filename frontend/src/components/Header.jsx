@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import {
   Navbar,
   Nav,
@@ -15,11 +15,28 @@ import {
 } from "react-icons/fa";
 import { HiArrowRight } from "react-icons/hi";
 
+import Sound from '../assets/sounds/click.mp3'
+
 import Button from "../components/common/Button";
 import Logo from "../assets/images/logo.png";
 
 const Header = () => {
   const [show, setShow] = useState(false);
+
+  // ✅ SOUND REF (MUST be inside component)
+  const clickSound = useRef(null);
+
+  // Initialize sound once
+  if (!clickSound.current) {
+    clickSound.current = new Audio({Sound});
+    clickSound.current.volume = 0.4;
+  }
+
+  const playClickSound = () => {
+    if (!clickSound.current) return;
+    clickSound.current.currentTime = 0;
+    clickSound.current.play();
+  };
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -37,17 +54,25 @@ const Header = () => {
 
           {/* CENTER MENU (DESKTOP) */}
           <Nav className="nav-center d-none d-lg-flex align-items-center gap-4">
-            <Nav.Link as={NavLink} to="/" end>Home</Nav.Link>
-            <Nav.Link as={NavLink} to="/about">About</Nav.Link>
-            <Nav.Link as={NavLink} to="/services">Services</Nav.Link>
-            <Nav.Link as={NavLink} to="/projects">Projects</Nav.Link>
-            <Nav.Link as={NavLink} to="/gallery">Gallery</Nav.Link>
+            <Nav.Link as={NavLink} to="/" end onClick={playClickSound}>
+              Home
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/about" onClick={playClickSound}>
+              About
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/services" onClick={playClickSound}>
+              Services
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/projects" onClick={playClickSound}>
+              Projects
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/gallery" onClick={playClickSound}>
+              Gallery
+            </Nav.Link>
           </Nav>
 
           {/* RIGHT SIDE (DESKTOP) */}
           <div className="nav-right d-none d-lg-flex align-items-center gap-3">
-
-            {/* SOCIAL ICONS */}
             <div className="nav-social">
               <a href="https://linkedin.com" target="_blank" rel="noreferrer">
                 <FaLinkedinIn />
@@ -63,16 +88,22 @@ const Header = () => {
               </a>
             </div>
 
-            {/* CTA BUTTON */}
-            <Button to="/contact" icon={<HiArrowRight />}>
-              Get Resume
+            <Button
+              to="/contact"
+              icon={<HiArrowRight />}
+              onClick={playClickSound}
+            >
+              Get Contact
             </Button>
           </div>
 
           {/* MOBILE MENU BUTTON */}
           <button
             className="menu-btn d-lg-none"
-            onClick={handleShow}
+            onClick={() => {
+              playClickSound();
+              handleShow();
+            }}
             aria-label="Open menu"
           >
             <i className="bi bi-list"></i>
@@ -88,39 +119,74 @@ const Header = () => {
         placement="start"
         className="portfolio-offcanvas"
       >
-        {/* HEADER */}
         <Offcanvas.Header closeButton className="offcanvas-header-custom">
           <Navbar.Brand
             as={NavLink}
             to="/"
             className="logo"
-            onClick={handleClose}
+            onClick={() => {
+              playClickSound();
+              handleClose();
+            }}
           >
             <img src={Logo} alt="Gokul Logo" />
           </Navbar.Brand>
         </Offcanvas.Header>
 
-        {/* BODY */}
         <Offcanvas.Body className="offcanvas-body-custom">
           <Nav className="flex-column offcanvas-nav-left">
-            <Nav.Link as={NavLink} to="/" end onClick={handleClose}>
+            <Nav.Link
+              as={NavLink}
+              to="/"
+              end
+              onClick={() => {
+                playClickSound();
+                handleClose();
+              }}
+            >
               Home
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/about" onClick={handleClose}>
+
+            <Nav.Link
+              as={NavLink}
+              to="/about"
+              onClick={() => {
+                playClickSound();
+                handleClose();
+              }}
+            >
               About
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/projects" onClick={handleClose}>
+
+            <Nav.Link
+              as={NavLink}
+              to="/projects"
+              onClick={() => {
+                playClickSound();
+                handleClose();
+              }}
+            >
               Services
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/skills" onClick={handleClose}>
+
+            <Nav.Link
+              as={NavLink}
+              to="/gallery"
+              onClick={() => {
+                playClickSound();
+                handleClose();
+              }}
+            >
               Gallery
             </Nav.Link>
 
-            {/* CTA BUTTON */}
             <Button
               to="/contact"
               icon={<HiArrowRight />}
-              onClick={handleClose}
+              onClick={() => {
+                playClickSound();
+                handleClose();
+              }}
               className="mt-4"
             >
               Get Started
@@ -128,7 +194,6 @@ const Header = () => {
           </Nav>
         </Offcanvas.Body>
 
-        {/* FOOTER */}
         <div className="offcanvas-footer offcanvas-footer-left">
           <p>Let’s build something amazing 🚀</p>
 

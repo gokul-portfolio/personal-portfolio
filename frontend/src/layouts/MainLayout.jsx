@@ -40,7 +40,7 @@ const MainLayout = () => {
             </main>
 
             {/* Footer */}
-            <Footer />
+            {/* <Footer /> */}
 
             {/* Floating Menu (optional) */}
             {/* <FloatingMenu visible={showFloatingMenu} /> */}

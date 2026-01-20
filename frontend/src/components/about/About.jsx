@@ -23,7 +23,7 @@ const About = () => {
 
                             <h2 className="main-head">
                                 Building <span className="name">Modern</span> Web Experiences <br />
-                                <span>That Feel Fast, Clean & Reliable</span>
+                                <span>That Feel Fast  Clean & Reliable</span>
                             </h2>
                         </div>
 
