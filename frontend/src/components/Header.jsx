@@ -1,4 +1,5 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
+
 import {
   Navbar,
   Nav,
@@ -15,7 +16,6 @@ import {
 } from "react-icons/fa";
 import { HiArrowRight } from "react-icons/hi";
 
-import Sound from '../assets/sounds/click.mp3'
 
 import Button from "../components/common/Button";
 import Logo from "../assets/images/logo.png";
@@ -23,14 +23,12 @@ import Logo from "../assets/images/logo.png";
 const Header = () => {
   const [show, setShow] = useState(false);
 
-  // ✅ SOUND REF (MUST be inside component)
   const clickSound = useRef(null);
-
-  // Initialize sound once
-  if (!clickSound.current) {
-    clickSound.current = new Audio({Sound});
+  useEffect(() => {
+    clickSound.current = new Audio("/sounds/click.mp3");
     clickSound.current.volume = 0.4;
-  }
+  }, []);
+
 
   const playClickSound = () => {
     if (!clickSound.current) return;

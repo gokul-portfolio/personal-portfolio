@@ -6,49 +6,46 @@ import Footer from "../components/Footer";
 import FloatingMenu from "../layouts/FloatingMenu";
 import ScrollToTop from "../components/common/ScrollToTop";
 import ArrowCursor from "../components/common/ArrowCursor";
+import BackgroundMusic from "../components/common/BackgroundMusic";
+import IntroLoader from "../components/common/IntroLoader";
 
 const MainLayout = () => {
-    const [showFloatingMenu, setShowFloatingMenu] = useState(false);
+  const [entered, setEntered] = useState(false);
+  const [showFloatingMenu, setShowFloatingMenu] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollY = window.scrollY;
-            setShowFloatingMenu(scrollY > 100);
-        };
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowFloatingMenu(window.scrollY > 100);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-        window.addEventListener("scroll", handleScroll, { passive: true });
+  return (
+    <>
+      {/* 🔥 INTRO */}
+      {!entered && <IntroLoader onEnter={() => setEntered(true)} />}
 
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+      {/* 🎵 MUSIC (STARTS ON ENTER CLICK) */}
+      <BackgroundMusic play={entered} />
 
-    return (
-
-        
+      {/* 🚀 SITE */}
+      {entered && (
         <>
-            {/* Header */}
-            <Header />
+          <Header />
+          <ArrowCursor />
 
-            <ArrowCursor />
+          <main className="main-content">
+            <Outlet />
+          </main>
 
-            {/* Page Content */}
-            <main className="main-content">
-
-                <Outlet />
-    
-            </main>
-
-            {/* Footer */}
-            {/* <Footer /> */}
-
-            {/* Floating Menu (optional) */}
-            {/* <FloatingMenu visible={showFloatingMenu} /> */}
-
-            {/* Scroll To Top Button */}
-            <ScrollToTop />
+          <Footer />
+          <FloatingMenu visible={showFloatingMenu} />
+          <ScrollToTop />
         </>
-    );
+      )}
+    </>
+  );
 };
 
 export default MainLayout;

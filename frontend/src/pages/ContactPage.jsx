@@ -11,7 +11,7 @@ const ContactPage = () => {
         <>
             {/* <Testimonial /> */}
 
-            {/* <ContactUs /> */}
+            <ContactUs />
 
             <ContactForm />
 

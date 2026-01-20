@@ -411,8 +411,6 @@ a:hover {
     pointer-events: none;
 }
 
-
-/* DUAL COLOR CIRCLE CURSOR FOLLOWER */
 #arrow-cursor {
     position: fixed;
     top: 0;
@@ -438,12 +436,87 @@ a:hover {
 
     filter: blur(0.4px);
 }
+.intro-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: radial-gradient(circle at top,
+            #1a1b33 0%,
+            #0b0b0b 60%);
+
+    color: #ffffff;
+    font-family: "Inter", system-ui, sans-serif;
+}
 
 
+.loader-title {
+  font-size: 18px;
+  color: var(--secondary-color);
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+  opacity: 0.85;
+}
 
+/* PROGRESS BAR */
+.loader-bar {
+  width: 220px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+}
 
+.loader-bar span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--secondary-color),
+    rgba(255, 56, 56, 0.65)
+  );
+  transition: width 0.25s ease;
+}
 
+/* PERCENT TEXT */
+.loader-percent {
+  margin-top: 14px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}
 
+/* ENTER BUTTON */
+.enter-btn {
+  margin-top: 30px;
+  padding: 14px 40px;
+
+  font-size: 15px;
+  letter-spacing: 1px;
+
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color),
+    #c62828
+  );
+
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.enter-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(255, 56, 56, 0.35);
+}
 
 
 /* ===============================
@@ -4064,6 +4137,7 @@ a:hover {
 .contact-form select {
     color: #111 !important;
 }
+
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
