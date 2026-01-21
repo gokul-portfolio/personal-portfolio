@@ -72,10 +72,10 @@ const Header = () => {
           {/* RIGHT SIDE (DESKTOP) */}
           <div className="nav-right d-none d-lg-flex align-items-center gap-3">
             <div className="nav-social">
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer">
                 <FaLinkedinIn />
               </a>
-              <a href="https://github.com" target="_blank" rel="noreferrer">
+              <a href="https://github.com/gokul-portfolio" target="_blank" rel="noreferrer">
                 <FaGithub />
               </a>
               <a href="https://instagram.com" target="_blank" rel="noreferrer">

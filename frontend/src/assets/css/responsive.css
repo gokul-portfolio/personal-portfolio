@@ -230,6 +230,15 @@
     .text-overlay h3 {
         font-size: 50px;
     }
+
+    .start-inner::after {
+        width: 300px;
+        height: 300px;
+    }
+
+    .enter-btn {
+        font-size: 19px !important;
+    }
 }
 
 @media screen and (max-width:991px) {
@@ -829,6 +838,15 @@
         font-size: 28px;
     }
 
+    .speaker-btn {
+        bottom: 20px;
+        left: 20px;
+        z-index: 100;
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (max-width:575px) {
@@ -1140,6 +1158,21 @@
 
     .banner-content-right {
         top: 5%;
+    }
+
+    .start-inner::after {
+        width: 200px;
+        height: 200px;
+    }
+
+    .enter-btn {
+        font-size: 15px !important;
+    }
+
+    .speaker-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
     }
 
 }

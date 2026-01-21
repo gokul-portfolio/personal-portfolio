@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import StartBg from '../../assets/images/home/start-bg.png'
 const IntroLoader = ({ onEnter }) => {
     const [progress, setProgress] = useState(0);
     const [ready, setReady] = useState(false);
@@ -30,9 +30,14 @@ const IntroLoader = ({ onEnter }) => {
                     <p className="loader-percent">{progress}%</p>
                 </>
             ) : (
-                <button className="enter-btn" onClick={onEnter}>
-                    ▶ Click to Enter
-                </button>
+
+                <div className="start-inner">
+                    <button className="enter-btn" onClick={onEnter}>
+                        ▶ Click to Begin
+                    </button>
+                </div>
+
+
             )}
         </div>
     );

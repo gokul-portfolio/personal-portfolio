@@ -436,6 +436,7 @@ a:hover {
 
     filter: blur(0.4px);
 }
+
 .intro-loader {
     position: fixed;
     inset: 0;
@@ -456,66 +457,162 @@ a:hover {
 
 
 .loader-title {
-  font-size: 18px;
-  color: var(--secondary-color);
-  letter-spacing: 6px;
-  margin-bottom: 20px;
-  opacity: 0.85;
+    font-size: 18px;
+    color: var(--secondary-color);
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+    opacity: 0.85;
 }
 
-/* PROGRESS BAR */
 .loader-bar {
-  width: 220px;
-  height: 3px;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 10px;
-  overflow: hidden;
+    width: 220px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .loader-bar span {
-  display: block;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    var(--secondary-color),
-    rgba(255, 56, 56, 0.65)
-  );
-  transition: width 0.25s ease;
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg,
+            var(--secondary-color),
+            rgba(255, 56, 56, 0.65));
+    transition: width 0.25s ease;
 }
 
-/* PERCENT TEXT */
 .loader-percent {
-  margin-top: 14px;
-  font-size: 14px;
-  letter-spacing: 2px;
-  opacity: 0.7;
+    margin-top: 14px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    opacity: 0.7;
 }
 
-/* ENTER BUTTON */
 .enter-btn {
-  margin-top: 30px;
-  padding: 14px 40px;
+    margin-top: 30px;
+    padding: 14px 40px;
 
-  font-size: 15px;
-  letter-spacing: 1px;
+    font-size: 24px !important;
+    font-weight: 600;
+    letter-spacing: 1.2px;
 
-  background: linear-gradient(
-    135deg,
-    var(--secondary-color),
-    #c62828
-  );
+    background: transparent !important;
 
-  color: #fff;
-  border: none;
-  border-radius: 40px;
-  cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
 
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        letter-spacing 0.35s ease;
 }
 
-.enter-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(255, 56, 56, 0.35);
+
+/* Full-page loader background */
+.loader-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle at top,
+            #1a1b33 0%,
+            #0b0b0b 60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+
+.loader-text {
+    position: absolute;
+    color: var(--hover-color);
+    font-size: 20px;
+    font-weight: 500;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader-ring {
+    width: 190px;
+    height: 190px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    border-bottom-width: 8px;
+    border-bottom-style: solid;
+}
+
+.ring1 {
+    border-bottom-color: rgb(240, 42, 230);
+    animation: rotate1 2s linear infinite;
+}
+
+.ring2 {
+    border-bottom-color: rgb(240, 19, 67);
+    animation: rotate2 2s linear infinite;
+}
+
+.ring3 {
+    border-bottom-color: rgb(3, 170, 170);
+    animation: rotate3 2s linear infinite;
+}
+
+.ring4 {
+    border-bottom-color: rgb(207, 135, 1);
+    animation: rotate4 2s linear infinite;
+}
+
+@keyframes rotate1 {
+    from {
+        transform: rotateX(50deg) rotateZ(110deg);
+    }
+
+    to {
+        transform: rotateX(50deg) rotateZ(470deg);
+    }
+}
+
+@keyframes rotate2 {
+    from {
+        transform: rotateX(20deg) rotateY(50deg) rotateZ(20deg);
+    }
+
+    to {
+        transform: rotateX(20deg) rotateY(50deg) rotateZ(380deg);
+    }
+}
+
+@keyframes rotate3 {
+    from {
+        transform: rotateX(40deg) rotateY(130deg) rotateZ(450deg);
+    }
+
+    to {
+        transform: rotateX(40deg) rotateY(130deg) rotateZ(90deg);
+    }
+}
+
+@keyframes rotate4 {
+    from {
+        transform: rotateX(70deg) rotateZ(270deg);
+    }
+
+    to {
+        transform: rotateX(70deg) rotateZ(630deg);
+    }
 }
 
 
@@ -4148,4 +4245,107 @@ a:hover {
 
 .contact-form label {
     color: #fff;
+}
+
+
+
+
+
+.start-inner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle at top, #1a1d2e, #000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.enter-btn {
+    position: relative;
+    z-index: 2;
+    padding: 14px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--primary-color) !important;
+}
+
+.speaker-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+}
+
+
+
+
+
+
+.start-inner::after {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    background: #ff3b3b;
+
+    border-radius: 62% 38% 55% 45% / 45% 60% 40% 55%;
+
+    z-index: 1;
+
+    animation: blobMove 8s ease-in-out infinite;
+}
+
+@keyframes blobMove {
+    0% {
+        border-radius: 60% 40% 55% 45% / 45% 55% 45% 55%;
+        transform: scale(1) rotate(0deg);
+    }
+
+    15% {
+        border-radius: 55% 45% 60% 40% / 50% 50% 40% 60%;
+        transform: scale(1.02) rotate(54deg);
+    }
+
+    30% {
+        border-radius: 50% 50% 65% 35% / 55% 45% 35% 65%;
+        transform: scale(1.03) rotate(108deg);
+    }
+
+    45% {
+        border-radius: 45% 55% 60% 40% / 60% 40% 40% 60%;
+        transform: scale(1.02) rotate(162deg);
+    }
+
+    60% {
+        border-radius: 40% 60% 55% 45% / 65% 35% 45% 55%;
+        transform: scale(1.03) rotate(216deg);
+    }
+
+    75% {
+        border-radius: 45% 55% 50% 50% / 60% 40% 55% 45%;
+        transform: scale(1.02) rotate(270deg);
+    }
+
+    90% {
+        border-radius: 55% 45% 45% 55% / 50% 50% 60% 40%;
+        transform: scale(1.01) rotate(324deg);
+    }
+
+    100% {
+        border-radius: 60% 40% 55% 45% / 45% 55% 45% 55%;
+        transform: scale(1) rotate(360deg);
+    }
 }

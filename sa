@@ -1,0 +1,51 @@
+import { Outlet } from "react-router-dom";
+import { useEffect, useState } from "react";
+
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import FloatingMenu from "../layouts/FloatingMenu";
+import ScrollToTop from "../components/common/ScrollToTop";
+import ArrowCursor from "../components/common/ArrowCursor";
+import BackgroundMusic from "../components/common/BackgroundMusic";
+import IntroLoader from "../components/common/IntroLoader";
+
+const MainLayout = () => {
+  const [entered, setEntered] = useState(false);
+  const [showFloatingMenu, setShowFloatingMenu] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowFloatingMenu(window.scrollY > 100);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <>
+      {/* 🔥 INTRO */}
+      {!entered && <IntroLoader onEnter={() => setEntered(true)} />}
+
+      {/* 🎵 MUSIC (STARTS ON ENTER CLICK) */}
+      <BackgroundMusic play={entered} />
+
+      {/* 🚀 SITE */}
+      {entered && (
+        <>
+          <Header />
+          <ArrowCursor />
+
+          <main className="main-content">
+            <Outlet />
+          </main>
+
+          <Footer />
+          <FloatingMenu visible={showFloatingMenu} />
+          <ScrollToTop />
+        </>
+      )}
+    </>
+  );
+};
+
+export default MainLayout;
