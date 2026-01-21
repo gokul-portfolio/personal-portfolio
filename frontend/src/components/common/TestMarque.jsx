@@ -10,36 +10,24 @@ const TestMarque = () => {
     <section className="text-marquee">
       <div className="marquee-track marquee-left">
         <div className="bi-text-scroll-item-1">
-          <h3>FULL STACK DEVELOPER</h3>
-
-          <h3>REACT DEVELOPER</h3>
-
-          <h3>UI / UX DESIGNER</h3>
-
-          <h3>SEO FRIENDLY WEBSITES</h3>
-
-          <h3>MODERN WEB APPS</h3>
+          <h3>FRONTEND WEB DEVELOPER</h3>
+          <h3>REACT & MODERN JAVASCRIPT</h3>
+          <h3>CLEAN UI / UX INTERFACES</h3>
+          <h3>PERFORMANCE OPTIMIZED SITES</h3>
+          <h3>SCALABLE WEB APPLICATIONS</h3>
         </div>
 
         {/* duplicate for smooth infinite loop */}
         <div className="bi-text-scroll-item-1">
-          <h3>FULL STACK DEVELOPER</h3>
-  
-
-          <h3>REACT DEVELOPER</h3>
-          
-
-          <h3>UI / UX DESIGNER</h3>
-     
-
-          <h3>SEO FRIENDLY WEBSITES</h3>
-         
-
-          <h3>MODERN WEB APPS</h3>
-       
+          <h3>FRONTEND WEB DEVELOPER</h3>
+          <h3>REACT & MODERN JAVASCRIPT</h3>
+          <h3>CLEAN UI / UX INTERFACES</h3>
+          <h3>PERFORMANCE OPTIMIZED SITES</h3>
+          <h3>SCALABLE WEB APPLICATIONS</h3>
         </div>
       </div>
     </section>
+
   );
 };
 

@@ -22,9 +22,10 @@ const CtaSection = () => {
                         From strategy to execution, our team delivers solutions designed to
                         scale your business and maximize impact.
                     </p>
-
-                    <Button to={"/contact"} icon={<HiArrowRight />}>
-                        Contact Us Today
+                    <Button
+                        to="tel:+917339114903"
+                        icon={<HiArrowRight />}  >
+                        Call Us Today
                     </Button>
                 </div>
 

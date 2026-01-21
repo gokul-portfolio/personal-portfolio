@@ -81,8 +81,8 @@ const WhyChoose = () => {
 
                             {/* CTA */}
                             <div className="why-btn mt-4">
-                               <Button to="/contact" icon={<HiArrowRight />}>
-                                Know More
+                               <Button to="/gallery" icon={<HiArrowRight />}>
+                               Explore Work
                                </Button>
                             </div>
                         </div>

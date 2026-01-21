@@ -27,7 +27,7 @@ const FloatingMenu = ({ visible }) => {
                 <span>Work</span>
             </NavLink>
 
-            <NavLink to="/skills">
+            <NavLink to="/gallery">
                 <HiPhotograph />
                 <span>Gallery</span>
             </NavLink>

@@ -17,7 +17,8 @@ const HomeBanner = () => {
 
                     <Col lg={7} md={7}>
                         <div className="banner-content-left">
-                            <span className="banner-subtitle">
+
+                            <span className="banner-subtitle wow animate__animated animate__fadeInDown" data-wow-delay="0.2s">
                                 <Typewriter
                                     text="HI, I’M"
                                     speed={120}
@@ -26,37 +27,47 @@ const HomeBanner = () => {
                                 />
                             </span>
 
-                            <h1 className="banner-title">GOKUL </h1>
-                            <h1 className="banner-title-outline">DIGITAL CRAFT</h1>
-                        </div>
+                            <h1 className="banner-title wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                                GOKUL
+                            </h1>
 
+                            <h1 className="banner-title-outline wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+                                DIGITAL CRAFT
+                            </h1>
+
+                        </div>
                     </Col>
 
                     <Col lg={5} md={5}>
-                        <div className="banner-content-right">
-                            <p>
+                        <div className="banner-content-right wow animate__animated animate__fadeInRight" data-wow-delay="0.8s">
+
+                            <p className="wow animate__animated animate__fadeInUp" data-wow-delay="1s">
                                 We craft modern digital experiences with a strong focus on
                                 design, performance, and user engagement. Our solutions are
                                 built to scale and leave a lasting impact.
                             </p>
 
-                            <Button to={'/about'} icon={<HiArrowRight />}>
-                                Get Started
-                            </Button>
+                            <div className="wow animate__animated animate__zoomIn" data-wow-delay="1.2s">
+                                <Button to={'/about'} icon={<HiArrowRight />}>
+                                    Get Started
+                                </Button>
+                            </div>
+
                         </div>
                     </Col>
 
                 </Row>
             </Container>
 
-            <div className="home-banner-overlay">
+            <div className="home-banner-overlay wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
                 <img src={Banner} className="img-fluid" alt="" />
             </div>
 
-            <div className="banner-overlay-1">
+            <div className="banner-overlay-1 wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
                 <img src={arrow} className="img-fluid" alt="" />
             </div>
         </section>
+
     );
 };
 

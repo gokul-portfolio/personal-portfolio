@@ -78,10 +78,10 @@ const Header = () => {
               <a href="https://github.com/gokul-portfolio" target="_blank" rel="noreferrer">
                 <FaGithub />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/kutti_gokul_/" target="_blank" rel="noreferrer">
                 <FaInstagram />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noreferrer">
+              <a href="https://www.facebook.com/gokul.g.73307" target="_blank" rel="noreferrer">
                 <FaFacebookF />
               </a>
             </div>
@@ -202,10 +202,10 @@ const Header = () => {
             <a href="https://github.com" target="_blank" rel="noreferrer">
               <FaGithub />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/kutti_gokul_/" target="_blank" rel="noreferrer">
               <FaInstagram />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+            <a href="https://www.facebook.com/gokul.g.73307" target="_blank" rel="noreferrer">
               <FaFacebookF />
             </a>
           </div>

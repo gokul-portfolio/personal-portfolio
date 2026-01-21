@@ -1864,7 +1864,7 @@ a:hover {
 
 .about-main-img {
     position: absolute;
-    bottom: -42%;
+    bottom: -35%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

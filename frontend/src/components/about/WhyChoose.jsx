@@ -33,7 +33,7 @@ const WhyChoose = () => {
                                         <div className="icon">
                                             <BsAward />
                                         </div>
-                                        <h3>3+</h3>
+                                        <h3>2+</h3>
                                         <p>Years of Industry Experience</p>
                                     </div>
                                 </Col>
@@ -43,7 +43,7 @@ const WhyChoose = () => {
                                         <div className="icon">
                                             <BsEmojiSmile />
                                         </div>
-                                        <h3>42+</h3>
+                                        <h3>45+</h3>
                                         <p>Happy Clients</p>
                                     </div>
                                 </Col>
@@ -53,7 +53,7 @@ const WhyChoose = () => {
                                         <div className="icon">
                                             <BsCheck2Circle />
                                         </div>
-                                        <h3>113+</h3>
+                                        <h3>45+</h3>
                                         <p>Projects Successfully Completed</p>
                                     </div>
                                 </Col>

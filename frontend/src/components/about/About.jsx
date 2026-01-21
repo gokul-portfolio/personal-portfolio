@@ -1,13 +1,12 @@
 import React from "react";
 import {
-  BsStarFill,
-  BsFacebook,
-  BsInstagram,
-  BsTwitterX,
   BsLinkedin,
+  BsInstagram,
+  BsGithub,
+  BsFacebook,
+  BsStarFill,
   BsQuote
 } from "react-icons/bs";
-
 import about from '../../assets/images/about/about-1.webp';
 
 const About = () => {
@@ -74,10 +73,26 @@ const About = () => {
               <div className="about-social wow animate__animated animate__fadeInUp" data-wow-delay="1s">
                 <h2>Follow Me</h2>
                 <ul className="social-list">
-                  <li><a href="#"><BsFacebook /></a></li>
-                  <li><a href="#"><BsInstagram /></a></li>
-                  <li><a href="#"><BsTwitterX /></a></li>
-                  <li><a href="#"><BsLinkedin /></a></li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/gokul-nath-6315a1317/" target="_blank" rel="noreferrer">
+                      <BsLinkedin />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/kutti_gokul_/" target="_blank" rel="noreferrer">
+                      <BsInstagram />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gokul-portfolio" target="_blank" rel="noreferrer">
+                      <BsGithub />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/gokul.g.73307" target="_blank" rel="noreferrer">
+                      <BsFacebook />
+                    </a>
+                  </li>
                 </ul>
               </div>
 
