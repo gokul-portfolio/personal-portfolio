@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import ContactImg from '../../assets/images/home/contact-img.png';
 import { MdEmail, MdPhoneInTalk, MdChat, MdWhatsapp } from "react-icons/md";
 import { HiArrowRight } from "react-icons/hi";
+import { BsGithub } from "react-icons/bs";
 
 import Button from '../common/Button';
 
@@ -37,10 +38,17 @@ const ContactUs = () => {
                                 <span>Call Assistance</span>
                             </a>
 
-                            <a href="https://m.me/yourpage" target="_blank" rel="noreferrer" className="contact-item item-3 wow animate__fadeInRight" data-wow-delay="0.5s">
-                                <MdChat />
-                                <span>Live Chat</span>
+                            <a
+                                href="https://github.com/gokul-portfolio"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="contact-item item-3 wow animate__fadeInRight"
+                                data-wow-delay="0.5s"
+                            >
+                              <BsGithub />
+                                <span>GitHub</span>
                             </a>
+
 
                             <a href="https://wa.me/917339114903" target="_blank" rel="noreferrer" className="contact-item item-4 wow animate__fadeInRight" data-wow-delay="0.6s">
                                 <MdWhatsapp />
@@ -57,7 +65,7 @@ const ContactUs = () => {
                         {/* Button */}
                         <div className="contact-btn wow animate__fadeInUp" data-wow-delay="0.8s">
                             <Button to="/" icon={<HiArrowRight />}>
-                                View More
+                                Portfolio
                             </Button>
                         </div>
 

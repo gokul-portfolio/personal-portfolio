@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Accordion } from "react-bootstrap";
-
 import servicesData from '../../data/services';
 
 const Services = () => {
@@ -24,7 +23,21 @@ const Services = () => {
                                     {item.title}
                                 </Accordion.Header>
                                 <Accordion.Body>
-                                    {item.description}
+
+                                    <div className="service-accordian-wrap">
+
+                                        <div className="service-content2" >
+                                            {item.description}
+
+                                        </div>
+
+                                        <div className="service-inside-img">
+                                            <img src={item.image} className="img-fluid" alt="" />
+
+                                        </div>
+
+                                    </div>
+
                                 </Accordion.Body>
                             </Accordion.Item>
                         ))}

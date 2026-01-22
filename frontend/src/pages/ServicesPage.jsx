@@ -23,7 +23,7 @@ const ServicesPage = () => {
       <Service />
 
       {/* Detailed or Additional Services */}
-      <ServiceMain />
+      {/* <ServiceMain /> */}
     </>
   );
 };
