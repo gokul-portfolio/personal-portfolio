@@ -23,6 +23,10 @@
         height: 500px;
     }
 
+    .contact-center-img img {
+        width: 800px;
+        height: auto;
+    }
 }
 
 @media screen and (max-width:1440px) {
@@ -77,6 +81,11 @@
         font-size: 36px;
     }
 
+    .project-detail-right .main-head {
+
+        font-size: 24px;
+    }
+
 
     .text-overlay h3 {
         font-size: 80px;
@@ -84,6 +93,31 @@
 
     .gallery-main-img {
         margin-top: -130px !important;
+    }
+
+    .contact-center-img img {
+        width: 700px;
+        height: auto;
+    }
+
+    .contact-center-img {
+        top: 55%;
+        left: 24%;
+    }
+
+    .contact-floating .item-2 {
+        top: 15%;
+        left: 30%;
+    }
+
+    .contact-floating .item-3 {
+        bottom: 26%;
+        left: -4%;
+    }
+
+    .contact-floating .item-4 {
+        bottom: 26%;
+        right: 48%;
     }
 
 }
@@ -255,6 +289,51 @@
         border-radius: 40px;
         font-size: 16px;
     }
+
+    .contact-center-img img {
+        width: 540px;
+        height: auto;
+    }
+
+    .contact-content-1 {
+        right: 1%;
+    }
+
+    .contact-floating .item-2 {
+        top: 15%;
+        left: 36%;
+    }
+
+    .contact-floating .item-4 {
+        bottom: 26%;
+        right: 41%;
+    }
+
+    .contact-center-img {
+        top: 55%;
+        left: 30%;
+    }
+
+    .contact-floating .item-1 {
+        top: 15%;
+        left: 1%;
+    }
+
+    .contact-floating .item-3 {
+        bottom: 26%;
+        left: 2%;
+    }
+
+    .contact-btn {
+        position: absolute;
+        bottom: 37%;
+        right: 15%;
+    }
+
+    .inner-contact {
+        position: relative;
+        padding: 40px 0px 40px 0px;
+    }
 }
 
 @media screen and (max-width:991px) {
@@ -369,7 +448,7 @@
     }
 
     .skills-wrap {
-        gap: 20px;
+        gap: 30px;
     }
 
     .why-right {
@@ -520,6 +599,30 @@
         min-width: 55px;
         color: #fff;
         font-size: 17x;
+    }
+
+    .contact-item {
+        padding: 6px 12px;
+        border-radius: 12px;
+        font-size: 12px;
+    }
+
+    .contact-center-img img {
+        width: 450px;
+    }
+
+    .contact-center-img {
+        top: 68%;
+    }
+
+    .contact-floating .item-4 {
+        bottom: 5%;
+        right: 37%;
+    }
+
+    .contact-floating .item-2 {
+        top: 41%;
+        left: 41%;
     }
 }
 
@@ -903,6 +1006,89 @@
         justify-content: center;
         align-items: center;
     }
+
+    .contact-center-img img {
+        width: 320px;
+    }
+
+    .contact-center-img {
+        top: 82%;
+    }
+
+    .contact-floating .item-4 {
+        bottom: -14%;
+        right: 25%;
+    }
+
+    .contact-floating .item-2 {
+        top: 64%;
+        left: 41%;
+    }
+
+    .contact-floating .item-3 {
+        bottom: -4%;
+    }
+
+    .contact-floating .item-1 {
+        top: 47%;
+        left: 1%;
+    }
+
+    .contact-btn {
+        bottom: 43%;
+        right: 5%;
+    }
+
+    .contact-floating .item-4 {
+        bottom: -20%;
+        right: 7%;
+    }
+
+    .contact-floating .item-2 {
+        top: 72%;
+        left: 49%;
+    }
+
+    .contact-center-img {
+        left: 44%;
+    }
+
+    .contact-floating .item-3 {
+        bottom: -16%;
+    }
+
+    .contact-floating .item-1 {
+        top: 67%;
+        left: 1%;
+    }
+
+    .project-detail {
+        position: relative;
+        padding: 30px 0;
+    }
+
+    .skills-wrap {
+        gap: 30px;
+    }
+
+    .service-content2 {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .service-accordian-wrap .service-inside-img img {
+        width: 50%;
+    }
+
+    .service-accordian-wrap .service-inside-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .service-accordian-wrap {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width:575px) {
@@ -1238,6 +1424,25 @@
     .gallery-grid {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .contact-content-1 h2 {
+        font-size: 18px;
+    }
+
+    .contact-content-1 {
+        max-width: 520px;
+        padding: 15px 18px;
+    }
+
+    .service-accordian-wrap .service-inside-img img {
+        width: 45%;
+    }
+
+    .service-accordion .accordion-button {
+        padding: 18px 22px;
+        font-size: 16px;
+        gap: 10px;
+    }
 }
 
 @media screen and (max-width:425px) {
@@ -1261,6 +1466,12 @@
 
     .about-box {
         padding: 15px 15px;
+    }
+
+    .service-accordion .accordion-button {
+        padding: 12px 12px;
+        font-size: 14px;
+        gap: 6px;
     }
 
     .about-sec .main-head {
@@ -1307,11 +1518,48 @@
         position: absolute;
         top: 62%;
     }
+
+    .contact-content-1 h2 {
+        font-size: 15px;
+    }
+
+    .contact-content-1 p {
+        font-size: 13px;
+    }
+
+    .contact-btn {
+        bottom: 38%;
+    }
+
+    .contact-item {
+        padding: 5px 9px;
+        border-radius: 12px;
+        font-size: 10px;
+    }
+
+    .contact-item svg {
+        font-size: 18px;
+
+    }
+
+    .contact-floating .item-2 {
+        top: 86%;
+        left: 57%;
+    }
+
+    .contact-center-img {
+        top: 83%;
+    }
 }
 
 @media screen and (max-width:375px) {
     .why-points {
         grid-template-columns: 1fr;
+    }
+
+    .contact-floating .item-4 {
+        bottom: -20%;
+        right: 2%;
     }
 
     .parent-wrap .parent-overlay-box-1 {

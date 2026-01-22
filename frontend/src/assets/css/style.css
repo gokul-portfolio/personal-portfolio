@@ -2311,8 +2311,24 @@ a:hover {
     padding: 10px 0px 30px 0;
 }
 
+.service-content2 {
+    display: flex;
+    align-items: center;
+}
+
+.service-accordian-wrap {
+    display: flex;
+}
+
 .service-accordion {
     max-width: 1200px;
+}
+
+.service-accordion .service-inside-img img {
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
 }
 
 .service-accordion .accordion-item {
@@ -2524,6 +2540,31 @@ a:hover {
     padding-left: 40px;
 }
 
+.project-detail-right .main-head {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Left decorative border */
+.project-detail-right .main-head::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 70%;
+    background: linear-gradient(to bottom,
+            #ff4b2b,
+            #ff416c);
+    border-radius: 4px;
+}
+
+.project-detail-right .para strong {
+    color: var(--hover-color);
+}
+
 /* ================= PARAGRAPH ================= */
 .project-detail-right .para {
     font-size: 14px;
@@ -2593,6 +2634,7 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px 24px;
     margin-bottom: 36px;
+
 }
 
 .meta-item {
@@ -2641,7 +2683,7 @@ a:hover {
     content: "";
     position: absolute;
     left: 0;
-    top: 12px;
+    top: 17px;
     width: 6px;
     height: 6px;
     border-radius: 50%;
@@ -2781,6 +2823,7 @@ a:hover {
     align-items: center;
     gap: 14px;
     width: 100%;
+    margin-top: 15px;
 }
 
 .project-main-tab .tab-btn {
@@ -2850,6 +2893,27 @@ a:hover {
     border-radius: 18px;
 }
 
+/* Top blur + gradient overlay */
+.project-show-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            rgba(15, 16, 32, 0.65) 0%,
+            rgba(15, 16, 32, 0.35) 40%,
+            rgba(15, 16, 32, 0.0) 100%);
+    backdrop-filter: blur(10px);
+    /* 🔥 blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: opacity 0.45s ease;
+    pointer-events: none;
+}
+
+.project-show-img:hover::after {
+    opacity: 1;
+}
+
 .project-show-img img {
     width: 100%;
     height: 100%;
@@ -2863,7 +2927,6 @@ a:hover {
     right: 0;
     bottom: 0;
     height: 45%;
-    /* adjust how tall the overlay should be */
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -2874,13 +2937,18 @@ a:hover {
             rgba(0, 0, 0, 0) 100%);
     color: #fff;
     transition: height 0.3s ease;
+    z-index: 9999;
 }
 
+
+.project-overlay-content:hover h2 {
+    color: var(--hover-color);
+}
 
 .project-overlay-content h2 {
     font-size: 22px;
     font-weight: 600;
-    color: #fff;
+    color: var(--white);
     margin-bottom: 0;
     transition: transform 0.4s ease;
 }
@@ -2894,7 +2962,7 @@ a:hover {
 
 .project-overlay-content p {
     font-size: 14px;
-    color: #dcdcdc;
+    color: var(--black);
     margin: 12px 0 16px;
     line-height: 1.6;
 }
@@ -2973,8 +3041,24 @@ a:hover {
     right: 0;
     width: 2px;
     height: 100%;
-    background: rgba(255, 255, 255, 0.8);
+   background: rgba(255, 60, 60, 0.8);
+
     border-radius: 2px;
+}
+
+.service-counter {
+    transition:
+        color 0.35s ease,
+        transform 0.35s ease;
+}
+
+.parent-overlay-box-4:hover .service-counter {
+    color: var(--hover-color);
+    transform: scale(1.08);
+}
+.parent-overlay-box-3:hover .service-counter {
+    color: var(--hover-color);
+    transform: scale(1.08);
 }
 
 .parent-overlay-box-3 {
@@ -4034,7 +4118,7 @@ a:hover {
 /* ========================contact page =====================*/
 .inner-contact {
     position: relative;
-    padding: 40px 0px;
+    padding: 40px 0px 150px 0px;
 }
 
 .contact-wrap {
@@ -4042,9 +4126,29 @@ a:hover {
     height: 400px;
 }
 
+.contact-center-img img {
+    width: 900px;
+    height: auto;
+    animation: floatUpDown 4s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .contact-center-img {
     position: absolute;
-    top: 65%;
+    top: 60%;
     left: 33%;
     transform: translate(-50%, -50%);
 }
@@ -4195,8 +4299,8 @@ a:hover {
 
 .contact-btn {
     position: absolute;
-    bottom: 20%;
-    right: 15%;
+    bottom: 38%;
+    right: 18%;
 }
 
 /* ------------conatct form ----------------------*/

@@ -30,7 +30,7 @@ const ContactPage = () => {
             <ContactUs />
 
             {/* Contact Form Section */}
-            <ContactForm />
+            {/* <ContactForm /> */}
 
             {/* Optional Testimonials */}
             {/* <Testimonial /> */}
