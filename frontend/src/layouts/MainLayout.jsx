@@ -55,7 +55,7 @@ const MainLayout = () => {
         </div>
       )}
 
-      <Header />
+      {/* <Header /> */}
       <ArrowCursor />
       <ScrollToTop />
 
@@ -70,8 +70,8 @@ const MainLayout = () => {
       </main>
 
 
-      <Footer />
-      <FloatingMenu visible={showFloatingMenu} />
+      {/* <Footer /> */}
+      {/* <FloatingMenu visible={showFloatingMenu} /> */}
       <ScrollToTop />
     </>
   );

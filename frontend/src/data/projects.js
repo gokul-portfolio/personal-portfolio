@@ -83,6 +83,28 @@ import childcare4 from "../assets/images/layout/1step2step/img-1.webp";
 import childcare5 from "../assets/images/layout/1step2step/img-1.webp";
 
 
+// biriyani handhi
+import biriyani1 from "../assets/images/layout/biriyani-handhi/main-layout.webp";
+import biriyani2 from "../assets/images/layout/biriyani-handhi/img-1.webp";
+
+
+// breeze cotton
+import breeze1 from "../assets/images/layout/breeze-cotton/main-layout.webp";
+import breeze2 from "../assets/images/layout/breeze-cotton/img-1.webp";
+
+
+// handhi biriyani
+import handhi1 from "../assets/images/layout/handhi/main-layout.webp";
+import handhi2 from "../assets/images/layout/handhi/img-1.webp";
+
+// GasCut Manufacturing
+import gascut1 from "../assets/images/layout/ask/main-layout.webp";
+import gascut2 from "../assets/images/layout/ask/img-1.webp";
+
+// TEJ Excavation
+import tej1 from "../assets/images/layout/fly-zone/main-layout.webp";
+import tej2 from "../assets/images/layout/fly-zone/img-1.webp";
+
 const projects = [
 
     // heavens
@@ -1039,9 +1061,7 @@ const projects = [
         repository: "https://github.com/yourusername/organico-react"
     },
 
-
     // ===========================ui/ux==========================================
-
 
     // 1step2step child care ui/ux project
     {
@@ -1125,8 +1145,435 @@ const projects = [
         ],
         screenshots: [childcare3, childcare4, childcare5],
         repository: null
-    }
+    },
 
+    // biriyani handhi
+    {
+        id: 102,
+        slug: "biriyani-handhi-restaurant-uiux",
+        title: "Biriyani Handhi – Restaurant Website UI/UX Design",
+        projectCatagory: "UI/UX Design Project",
+        category: "uiux",
+
+        role: "UI/UX Design, Visual Design, Wireframing, Prototyping",
+        objective:
+            "To design a visually appealing and conversion-focused restaurant website that highlights Biriyani Handhi’s authentic flavors, menu offerings, and brand identity.",
+
+        description:
+            "A UI/UX case study focused on designing a modern, food-centric digital experience for a biriyani restaurant brand.",
+
+        longDescription:
+            "This project focuses on creating a bold and appetizing UI/UX experience for Biriyani Handhi, a restaurant brand known for authentic biriyani flavors. The design emphasizes strong food visuals, clear menu presentation, easy ordering flow, and brand consistency. Special attention was given to color psychology, typography, and layout hierarchy to enhance appetite appeal and improve user engagement. This project was created as a UI/UX portfolio case study.",
+
+        mainimg: biriyani1,
+        thumbnail: biriyani2,
+
+        tech: [
+            "Figma",
+            "UI Design Principles",
+            "UX Strategy",
+            "Wireframing",
+            "Prototyping"
+        ],
+
+        features: [
+            "Bold and appetizing food-focused visual design",
+            "Clear menu layout with pricing visibility",
+            "Strong call-to-actions for order and enquiry",
+            "Mobile-first design for quick access",
+            "Brand-consistent color palette inspired by food tones",
+            "Simple navigation for faster user decisions",
+            "High-quality food imagery integration",
+            "Reusable UI components for scalability"
+        ],
+
+        solution:
+            "Created wireframes and high-fidelity UI screens using Figma with a focus on food presentation and user flow. Designed intuitive navigation from homepage to menu and contact sections, ensuring users can easily explore dishes and place enquiries.",
+
+        targetAudience:
+            "Food lovers, local customers, and online users looking for authentic biriyani and restaurant dining options",
+
+        deliverables: [
+            "Wireframes",
+            "High-Fidelity UI Designs",
+            "Interactive Prototype",
+            "UI/UX Case Study"
+        ],
+
+        challenges: [
+            "Making food visuals stand out without clutter",
+            "Balancing aesthetic appeal with usability",
+            "Creating strong appetite appeal through design"
+        ],
+
+        deployment: "Design Prototype (Figma)",
+        client: "Self / UIUX Practice Project",
+        duration: "1 Week",
+        status: "Completed",
+        liveUrl: "https://yourportfolio.com",
+
+        industry: "Food & Restaurant",
+        tools: ["Figma"],
+        analytics: null,
+        seoKeywords: [
+            "restaurant ui ux design",
+            "biriyani website ui design",
+            "food website ui ux",
+            "restaurant landing page design",
+            "ui ux case study restaurant"
+        ],
+
+        timeline: [
+            "Research & Wireframing - Day 1–2",
+            "UI Design & Prototyping - Day 3–7"
+        ],
+
+        screenshots: [biriyani1, biriyani2],
+        repository: null
+    },
+
+    // breeze otton
+    {
+        id: 103,
+        slug: "breeze-cotton-sanitary-products-uiux",
+        title: "Breeze Cotton – Sanitary Pads & Cotton Products Website UI/UX Design",
+        projectCatagory: "UI/UX Design Project",
+        category: "uiux",
+
+        role: "UI/UX Design, Visual Design, UX Strategy, Wireframing, Prototyping",
+        objective:
+            "To design a clean, trustworthy, and informative website UI/UX for Breeze Cotton that educates users about hygiene products while building confidence and comfort.",
+
+        description:
+            "A UI/UX case study focused on creating a hygienic, calm, and women-centric digital experience for a sanitary pads and cotton products brand.",
+
+        longDescription:
+            "This project focuses on designing a soft, reassuring, and educational UI/UX experience for Breeze Cotton, a brand offering sanitary pads and cotton-based hygiene products. The design emphasizes comfort, trust, and clarity through clean layouts, gentle color palettes, and easy-to-understand content structure. Special attention was given to accessibility, product education, and stigma-free communication, making the website approachable for all age groups. This project was created as a UI/UX portfolio case study.",
+
+        mainimg: breeze1,
+        thumbnail: breeze2,
+
+        tech: [
+            "Figma",
+            "UI Design Principles",
+            "UX Strategy",
+            "Wireframing",
+            "Prototyping"
+        ],
+
+        features: [
+            "Clean and calming visual design focused on hygiene and comfort",
+            "Clear product categorization for sanitary pads and cotton products",
+            "Educational sections explaining product usage and benefits",
+            "Soft color palette to create trust and emotional comfort",
+            "Mobile-first layout for easy access and readability",
+            "Accessible typography for all age groups",
+            "Clear call-to-actions for product enquiry and purchase",
+            "Reusable UI components for consistency and scalability"
+        ],
+
+        solution:
+            "Designed structured wireframes and high-fidelity UI screens using Figma, focusing on product education and user comfort. The UX flow guides users from awareness to product understanding and enquiry, ensuring clarity without overwhelming information.",
+
+        targetAudience:
+            "Women, young adults, healthcare-conscious users, and families seeking safe and reliable hygiene products",
+
+        deliverables: [
+            "User Research & UX Strategy",
+            "Wireframes",
+            "High-Fidelity UI Designs",
+            "Interactive Prototype",
+            "UI/UX Case Study"
+        ],
+
+        challenges: [
+            "Designing sensitive hygiene content in a stigma-free manner",
+            "Balancing educational content with clean visual design",
+            "Building trust for a health-focused product brand"
+        ],
+
+        deployment: "Design Prototype (Figma)",
+        client: "Self / UIUX Practice Project",
+        duration: "1–2 Weeks",
+        status: "Completed",
+        liveUrl: "https://yourportfolio.com",
+
+        industry: "Hygiene & Healthcare Products",
+        tools: ["Figma"],
+        analytics: null,
+        seoKeywords: [
+            "sanitary pads website ui ux",
+            "cotton products website design",
+            "women hygiene ui ux design",
+            "healthcare product website ui",
+            "ui ux case study sanitary products"
+        ],
+
+        timeline: [
+            "Research & Wireframing - Week 1",
+            "UI Design & Prototyping - Week 2"
+        ],
+
+        screenshots: [breeze1, breeze2],
+        repository: null
+    },
+
+    // handhi
+    {
+        id: 104,
+        slug: "biriyani-handhi-biriyani-kadai-uiux",
+        title: "Biriyani Handhi – Authentic Biriyani Kadai Website UI/UX Design",
+        projectCatagory: "UI/UX Design Project",
+        category: "uiux",
+
+        role: "UI/UX Design, Visual Design, UX Strategy, Wireframing, Prototyping",
+        objective:
+            "To design a bold, appetizing, and user-friendly website UI/UX for Biriyani Handhi that highlights authentic biriyani flavors, menu offerings, and encourages walk-ins and enquiries.",
+
+        description:
+            "A UI/UX case study focused on designing a food-first, desi-style digital experience for a local biriyani kadai and restaurant brand.",
+
+        longDescription:
+            "This project focuses on creating a rich, mouth-watering, and engaging UI/UX experience for Biriyani Handhi, a biriyani kadai known for authentic taste and traditional cooking. The design emphasizes strong food imagery, bold typography, and simple navigation to help users quickly explore the menu, location, and contact details. The UX prioritizes fast decision-making for hungry users while maintaining a strong local brand identity. This project was created as a UI/UX portfolio case study.",
+
+        mainimg: handhi1,
+        thumbnail: handhi2,
+
+        tech: [
+            "Figma",
+            "UI Design Principles",
+            "UX Strategy",
+            "Wireframing",
+            "Prototyping"
+        ],
+
+        features: [
+            "Bold and appetizing food-centric visual design",
+            "Clear biriyani-focused menu presentation",
+            "Strong call-to-actions for location and enquiry",
+            "Mobile-first layout for quick access",
+            "Color palette inspired by spices and traditional food tones",
+            "Simple navigation for faster customer decisions",
+            "High-quality biriyani and food imagery",
+            "Reusable UI components for future expansion"
+        ],
+
+        solution:
+            "Designed wireframes and high-fidelity UI screens using Figma with a focus on food visibility and simplicity. The UX flow allows users to quickly view the menu, understand special dishes, locate the kadai, and contact the restaurant without friction.",
+
+        targetAudience:
+            "Local customers, biriyani lovers, food enthusiasts, and takeaway or dine-in seekers",
+
+        deliverables: [
+            "Wireframes",
+            "High-Fidelity UI Designs",
+            "Interactive Prototype",
+            "UI/UX Case Study"
+        ],
+
+        challenges: [
+            "Creating strong appetite appeal without cluttering the UI",
+            "Balancing traditional food branding with modern UI",
+            "Designing for quick user decisions on mobile devices"
+        ],
+
+        deployment: "Design Prototype (Figma)",
+        client: "Self / UIUX Practice Project",
+        duration: "1 Week",
+        status: "Completed",
+        liveUrl: "https://yourportfolio.com",
+
+        industry: "Food & Restaurant (Biriyani Kadai)",
+        tools: ["Figma"],
+        analytics: null,
+        seoKeywords: [
+            "biriyani kadai website ui ux",
+            "restaurant ui ux design",
+            "biriyani restaurant website design",
+            "food website ui ux case study",
+            "local restaurant ui design"
+        ],
+
+        timeline: [
+            "Research & Wireframing - Day 1–2",
+            "UI Design & Prototyping - Day 3–7"
+        ],
+
+        screenshots: [biriyani1, biriyani2],
+        repository: null
+    },
+
+    // ask
+    {
+        id: 105,
+        slug: "gascut-manufacturing-industrial-uiux",
+        title: "GasCut Manufacturing – Industrial Gas Cutting Website UI/UX Design",
+        projectCatagory: "UI/UX Design Project",
+        category: "uiux",
+
+        role: "UI/UX Design, Visual Design, UX Strategy, Wireframing, Prototyping",
+        objective:
+            "To design a professional, informative, and industry-focused website UI/UX for a gas cutting manufacturing company that clearly communicates services, capabilities, and builds B2B trust.",
+
+        description:
+            "A UI/UX case study focused on designing a strong, industrial-style digital experience for a gas cutting and manufacturing services company.",
+
+        longDescription:
+            "This project focuses on creating a robust and professional UI/UX experience for a gas cutting manufacturing company offering industrial fabrication and cutting services. The design emphasizes clarity, technical credibility, and structured information delivery. Special attention was given to service clarity, process explanation, and enquiry-driven UX to support B2B clients seeking reliable manufacturing partners. This project was created as a UI/UX portfolio case study.",
+
+        mainimg: gascut1,
+        thumbnail: gascut2,
+
+        tech: [
+            "Figma",
+            "UI Design Principles",
+            "UX Strategy",
+            "Wireframing",
+            "Prototyping"
+        ],
+
+        features: [
+            "Strong industrial and professional visual design",
+            "Clear presentation of gas cutting and manufacturing services",
+            "Well-structured layout for technical information",
+            "Easy enquiry and contact flow for B2B clients",
+            "Mobile-responsive design for on-site access",
+            "Readable typography for specifications and details",
+            "Clear call-to-actions for quotation requests",
+            "Scalable UI components for future services"
+        ],
+
+        solution:
+            "Designed structured wireframes and high-fidelity UI screens using Figma with a focus on clarity and functionality. The UX flow guides users from service overview to process understanding and enquiry submission, ensuring minimal friction for industrial clients.",
+
+        targetAudience:
+            "Manufacturing companies, fabrication units, industrial buyers, and B2B clients seeking gas cutting and metal processing services",
+
+        deliverables: [
+            "UX Strategy",
+            "Wireframes",
+            "High-Fidelity UI Designs",
+            "Interactive Prototype",
+            "UI/UX Case Study"
+        ],
+
+        challenges: [
+            "Presenting technical manufacturing services in a user-friendly manner",
+            "Balancing industrial aesthetics with modern UI design",
+            "Designing for both desktop and on-site mobile users"
+        ],
+
+        deployment: "Design Prototype (Figma)",
+        client: "Self / UIUX Practice Project",
+        duration: "1–2 Weeks",
+        status: "Completed",
+        liveUrl: "https://yourportfolio.com",
+
+        industry: "Manufacturing & Industrial Services",
+        tools: ["Figma"],
+        analytics: null,
+        seoKeywords: [
+            "manufacturing website ui ux",
+            "gas cutting services website design",
+            "industrial ui ux case study",
+            "b2b manufacturing website ui",
+            "metal cutting website ui ux"
+        ],
+
+        timeline: [
+            "Research & Wireframing - Week 1",
+            "UI Design & Prototyping - Week 2"
+        ],
+
+        screenshots: [gascut1, gascut2],
+        repository: null
+    },
+
+    // TEJ Excavation – Excavation & Earthmoving Machinery UI/UX Project
+    {
+        id: 106,
+        slug: "fly-excavation-machinery-uiux",
+        title: "Fly Zone Excavation – Excavation & Earthmoving Machinery Website UI/UX Design",
+        projectCatagory: "UI/UX Design Project",
+        category: "uiux",
+
+        role: "UI/UX Design, Visual Design, UX Strategy, Wireframing, Prototyping",
+        objective:
+            "To design a strong, professional, and industry-focused website UI/UX for TEJ Excavation that clearly presents excavation services, machinery capabilities, and builds trust with contractors and B2B clients.",
+
+        description:
+            "A UI/UX case study focused on designing a robust and practical digital experience for an excavation and earthmoving machinery services company.",
+
+        longDescription:
+            "This project focuses on creating a powerful and reliable UI/UX experience for TEJ Excavation, a company providing excavation, earthmoving, and heavy machinery services. The design emphasizes strength, reliability, and clarity through bold layouts, industrial color tones, and structured content. Special focus was given to service clarity, machinery showcase, project enquiry flow, and mobile accessibility for on-site users. This project was created as a UI/UX portfolio case study.",
+
+        mainimg: tej1,
+        thumbnail: tej2,
+
+        tech: [
+            "Figma",
+            "UI Design Principles",
+            "UX Strategy",
+            "Wireframing",
+            "Prototyping"
+        ],
+
+        features: [
+            "Strong industrial and machinery-focused visual design",
+            "Clear presentation of excavation and earthmoving services",
+            "Dedicated sections for machinery and capabilities",
+            "Easy enquiry and quotation request flow",
+            "Mobile-responsive layout for on-site usage",
+            "Bold typography for high readability",
+            "Clear call-to-actions for project enquiries",
+            "Scalable UI components for future expansion"
+        ],
+
+        solution:
+            "Designed structured wireframes and high-fidelity UI screens using Figma with a focus on clarity and performance. The UX flow guides users from service overview to machinery details and enquiry submission, ensuring minimal friction for contractors and industrial clients.",
+
+        targetAudience:
+            "Construction companies, contractors, builders, infrastructure firms, and B2B clients seeking excavation and earthmoving services",
+
+        deliverables: [
+            "UX Strategy",
+            "Wireframes",
+            "High-Fidelity UI Designs",
+            "Interactive Prototype",
+            "UI/UX Case Study"
+        ],
+
+        challenges: [
+            "Presenting heavy machinery services in a clean and understandable way",
+            "Balancing industrial strength with modern UI design",
+            "Designing for fast decision-making by contractors"
+        ],
+
+        deployment: "Design Prototype (Figma)",
+        client: "Self / UIUX Practice Project",
+        duration: "1–2 Weeks",
+        status: "Completed",
+        liveUrl: "https://yourportfolio.com",
+
+        industry: "Construction & Excavation Services",
+        tools: ["Figma"],
+        analytics: null,
+        seoKeywords: [
+            "excavation website ui ux",
+            "earthmoving machinery website design",
+            "construction services ui ux",
+            "excavator machine website ui",
+            "industrial ui ux case study"
+        ],
+
+        timeline: [
+            "Research & Wireframing - Week 1",
+            "UI Design & Prototyping - Week 2"
+        ],
+
+        screenshots: [tej1, tej2],
+        repository: null
+    }
 
 
 ];

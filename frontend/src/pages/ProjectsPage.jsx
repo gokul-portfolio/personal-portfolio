@@ -15,7 +15,7 @@ const ProjectsPage = () => {
         <meta name="robots" content="index, follow" />
       </Helmet>
 
-      <ProjectMain />
+      {/* <ProjectMain /> */}
       <ProjectShowCase />
     </>
   );

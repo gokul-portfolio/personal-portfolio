@@ -1,18 +1,18 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Suspense, lazy } from "react";
+import { Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import MainLayout from "./layouts/MainLayout";
 
-import Home from "./pages/HomePage";
-import About from "./pages/AboutPage";
-import Services from "./pages/ServicesPage";
-import Projects from "./pages/ProjectsPage";
-import Gallery from "./pages/GalleryPage";
-import Contact from "./pages/ContactPage";
-import ProjectDetail from "./pages/ProjectDetailPage";
-import ProjectDetailMain from "./components/projects/ProjectDetailMain";
-import NotFound from "./pages/NotFound";
+const Home = lazy(() => import("./pages/HomePage"));
+const About = lazy(() => import("./pages/AboutPage"));
+const Services = lazy(() => import("./pages/ServicesPage"));
+const Projects = lazy(() => import("./pages/ProjectsPage"));
+const Gallery = lazy(() => import("./pages/GalleryPage"));
+const Contact = lazy(() => import("./pages/ContactPage"));
+const ProjectDetailMain = lazy(() => import("./components/projects/ProjectDetailMain"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 function App() {
     return (
