@@ -29,11 +29,6 @@ const ContactPage = () => {
             {/* Contact Info Section */}
             <ContactUs />
 
-            {/* Contact Form Section */}
-            {/* <ContactForm /> */}
-
-            {/* Optional Testimonials */}
-            {/* <Testimonial /> */}
         </>
     );
 };

@@ -164,7 +164,7 @@ const projects = [
         client: "Personal Project",
         duration: "3 Weeks",
         status: "Completed",
-        liveUrl: "https://yourportfolio.com",
+        liveUrl: "https://heavenkey.in/",
 
         industry: "Real Estate",
         tools: ["Figma"],
@@ -252,7 +252,7 @@ const projects = [
         client: "Personal Project / Sample Brand",
         duration: "4 Weeks",
         status: "Completed",
-        liveUrl: "https://yourportfolio.com",
+        liveUrl: "https://rubymuse.in/demo/",
 
         industry: "Fashion & Ecommerce",
         tools: ["Figma", "Photoshop"],
@@ -340,7 +340,7 @@ const projects = [
         client: "Axiogen Biotech",
         duration: "3–4 Weeks",
         status: "Completed",
-        liveUrl: "https://yourportfolio.com",
+        liveUrl: "https://icloudcs.in/Axiogen-Biotech/",
 
         industry: "Biotechnology & Life Sciences",
         tools: ["Figma", "Photoshop"],
@@ -431,7 +431,7 @@ const projects = [
         client: "Ponniyarkai",
         duration: "4–5 Weeks",
         status: "Completed",
-        liveUrl: "https://yourportfolio.com",
+        liveUrl: "https://ponniyarkkai.com/",
 
         industry: "Organic Food & E-commerce",
         tools: ["Figma", "Photoshop"],
@@ -516,7 +516,7 @@ const projects = [
         client: "Ilampirai",
         duration: "2 Weeks",
         status: "Completed",
-        liveUrl: "https://yourportfolio.com",
+        liveUrl: "https://www.ilampirai.in/",
 
         industry: "Corporate / Business",
         tools: ["Figma", "Photoshop"],
@@ -604,7 +604,7 @@ const projects = [
         client: "Siri Polymers",
         duration: "3–4 Weeks",
         status: "Completed",
-        liveUrl: "https://yourportfolio.com",
+        liveUrl: "https://icloudcs.in/Siri-polymer/",
 
         industry: "Agriculture Products & Polymer Manufacturing",
         tools: ["Figma"],
@@ -693,7 +693,7 @@ const projects = [
         client: "1Step2Step Child Care",
         duration: "3–4 Weeks",
         status: "Completed",
-        liveUrl: "https://yourportfolio.com",
+        liveUrl: "https://icloudcs.in/1step2step/",
 
         industry: "Child Care & Early Education",
         tools: ["Figma"],
@@ -782,7 +782,7 @@ const projects = [
         client: "Fabtex",
         duration: "3–4 Weeks",
         status: "Completed",
-        liveUrl: "https://yourportfolio.com",
+        liveUrl: "https://fabtexsustatech.com/",
 
         industry: "Industrial Machinery & Manufacturing",
         tools: ["Figma"],
@@ -871,7 +871,7 @@ const projects = [
         client: "Mr.Taxi Tours & Travels",
         duration: "3–4 Weeks",
         status: "Completed",
-        liveUrl: "https://yourportfolio.com",
+        liveUrl: "https://mrtaxitoursandtravels.com/",
 
         industry: "Travel & Tourism",
         tools: ["Figma"],
@@ -956,7 +956,7 @@ const projects = [
         client: "People’s Laundry",
         duration: "2 Weeks",
         status: "Completed",
-        liveUrl: "https://yourportfolio.com",
+        liveUrl: "https://www.peopleslaundry.com/",
 
         industry: "Laundry & Dry Cleaning Services",
         tools: ["Figma"],

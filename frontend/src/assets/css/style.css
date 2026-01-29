@@ -4453,3 +4453,68 @@ a:hover {
         transform: scale(1) rotate(360deg);
     }
 }
+
+/* ============================resume page======================= */
+.resume-section {
+  /* background: #f4f6f8; */
+  padding: 40px 0;
+}
+
+.resume-container {
+  max-width: 900px;
+  background: #ffffff;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.resume-header h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.resume-header p {
+  font-size: 14px;
+  color: #555;
+}
+
+.resume-header a {
+  color: #0d6efd;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.resume-block {
+  margin-top: 25px;
+}
+
+.resume-block h4 {
+  border-bottom: 2px solid #000;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.resume-block h6 {
+  font-weight: 600;
+}
+
+.resume-block h6 span {
+  float: right;
+  font-size: 13px;
+  color: #666;
+}
+
+.resume-block ul {
+  padding-left: 20px;
+}
+
+.resume-block li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.two-column li {
+  list-style: none;
+  margin-bottom: 8px;
+}
