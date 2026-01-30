@@ -105,6 +105,21 @@ import gascut2 from "../assets/images/layout/ask/img-1.webp";
 import tej1 from "../assets/images/layout/fly-zone/main-layout.webp";
 import tej2 from "../assets/images/layout/fly-zone/img-1.webp";
 
+
+
+// ================poster
+
+import poster1 from "../assets/images/poster/post-1.webp";
+import poster2 from "../assets/images/poster/post-2.webp";
+import poster3 from "../assets/images/poster/post-3.webp";
+import poster4 from "../assets/images/poster/post-4.webp";
+import poster5 from "../assets/images/poster/post-5.webp";
+import poster6 from "../assets/images/poster/post-6.webp";
+import poster7 from "../assets/images/poster/post-7.webp";
+import poster8 from "../assets/images/poster/post-8.webp";
+import poster9 from "../assets/images/poster/post-9.webp";
+import poster10 from "../assets/images/poster/post-10.webp";
+
 const projects = [
 
     // heavens
@@ -164,7 +179,7 @@ const projects = [
         client: "Personal Project",
         duration: "3 Weeks",
         status: "Completed",
-        liveUrl: "https://heavenkey.in/",
+        liveUrl: "https://yourportfolio.com",
 
         industry: "Real Estate",
         tools: ["Figma"],
@@ -252,7 +267,7 @@ const projects = [
         client: "Personal Project / Sample Brand",
         duration: "4 Weeks",
         status: "Completed",
-        liveUrl: "https://rubymuse.in/demo/",
+        liveUrl: "https://yourportfolio.com",
 
         industry: "Fashion & Ecommerce",
         tools: ["Figma", "Photoshop"],
@@ -340,7 +355,7 @@ const projects = [
         client: "Axiogen Biotech",
         duration: "3–4 Weeks",
         status: "Completed",
-        liveUrl: "https://icloudcs.in/Axiogen-Biotech/",
+        liveUrl: "https://yourportfolio.com",
 
         industry: "Biotechnology & Life Sciences",
         tools: ["Figma", "Photoshop"],
@@ -431,7 +446,7 @@ const projects = [
         client: "Ponniyarkai",
         duration: "4–5 Weeks",
         status: "Completed",
-        liveUrl: "https://ponniyarkkai.com/",
+        liveUrl: "https://yourportfolio.com",
 
         industry: "Organic Food & E-commerce",
         tools: ["Figma", "Photoshop"],
@@ -516,7 +531,7 @@ const projects = [
         client: "Ilampirai",
         duration: "2 Weeks",
         status: "Completed",
-        liveUrl: "https://www.ilampirai.in/",
+        liveUrl: "https://yourportfolio.com",
 
         industry: "Corporate / Business",
         tools: ["Figma", "Photoshop"],
@@ -604,7 +619,7 @@ const projects = [
         client: "Siri Polymers",
         duration: "3–4 Weeks",
         status: "Completed",
-        liveUrl: "https://icloudcs.in/Siri-polymer/",
+        liveUrl: "https://yourportfolio.com",
 
         industry: "Agriculture Products & Polymer Manufacturing",
         tools: ["Figma"],
@@ -693,7 +708,7 @@ const projects = [
         client: "1Step2Step Child Care",
         duration: "3–4 Weeks",
         status: "Completed",
-        liveUrl: "https://icloudcs.in/1step2step/",
+        liveUrl: "https://yourportfolio.com",
 
         industry: "Child Care & Early Education",
         tools: ["Figma"],
@@ -782,7 +797,7 @@ const projects = [
         client: "Fabtex",
         duration: "3–4 Weeks",
         status: "Completed",
-        liveUrl: "https://fabtexsustatech.com/",
+        liveUrl: "https://yourportfolio.com",
 
         industry: "Industrial Machinery & Manufacturing",
         tools: ["Figma"],
@@ -871,7 +886,7 @@ const projects = [
         client: "Mr.Taxi Tours & Travels",
         duration: "3–4 Weeks",
         status: "Completed",
-        liveUrl: "https://mrtaxitoursandtravels.com/",
+        liveUrl: "https://yourportfolio.com",
 
         industry: "Travel & Tourism",
         tools: ["Figma"],
@@ -956,7 +971,7 @@ const projects = [
         client: "People’s Laundry",
         duration: "2 Weeks",
         status: "Completed",
-        liveUrl: "https://www.peopleslaundry.com/",
+        liveUrl: "https://yourportfolio.com",
 
         industry: "Laundry & Dry Cleaning Services",
         tools: ["Figma"],
@@ -1573,8 +1588,85 @@ const projects = [
 
         screenshots: [tej1, tej2],
         repository: null
-    }
+    },
 
+
+    //===============================================
+    //                   poster 
+    // ======================================================
+    // ZIG Makeup Artist Posters (UI/UX)
+    {
+        id: 201,
+        name: "ZIG Makeup Artist – Promo Poster",
+        image: poster1,
+        brand: "zig",
+        category: "branding"
+    },
+    {
+        id: 202,
+        name: "ZIG Makeup Artist – Bridal Poster",
+        image: poster2,
+        brand: "zig",
+        category: "branding"
+    },
+    {
+        id: 203,
+        name: "ZIG Makeup Artist – Offer Poster",
+        image: poster5,
+        brand: "zig",
+        category: "branding"
+    },
+    {
+        id: 204,
+        name: "ZIG Makeup Artist – Instagram Creative",
+        image: poster7,
+        brand: "zig",
+        category: "branding"
+    },
+    {
+        id: 205,
+        name: "ZIG Makeup Artist – Service Highlight",
+        image: poster9,
+        brand: "zig",
+        category: "branding"
+    },
+
+    // Proper Brand Instagram Posters (Branding)
+    {
+        id: 206,
+        name: "Brand Instagram Poster 01",
+        image: poster3,
+        brand: "brand",
+        category: "branding"
+    },
+    {
+        id: 207,
+        name: "Brand Instagram Poster 02",
+        image: poster4,
+        brand: "brand",
+        category: "branding"
+    },
+    {
+        id: 208,
+        name: "Brand Instagram Poster 03",
+        image: poster6,
+        brand: "brand",
+        category: "branding"
+    },
+    {
+        id: 209,
+        name: "Brand Instagram Poster 04",
+        image: poster8,
+        brand: "brand",
+        category: "branding"
+    },
+    {
+        id: 210,
+        name: "Brand Instagram Poster 05",
+        image: poster10,
+        brand: "brand",
+        category: "branding"
+    },
 
 ];
 

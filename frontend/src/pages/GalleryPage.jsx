@@ -34,6 +34,8 @@ const GalleryPage = () => {
       {/* Gallery Content */}
       <GalleryMain />
 
+      {/* Optional CTA section (if needed) */}
+      {/* <CtaSection /> */}
     </>
   );
 };

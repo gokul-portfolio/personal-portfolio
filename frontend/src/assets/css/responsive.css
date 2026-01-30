@@ -785,7 +785,7 @@
     }
 
     .project-show-inner {
-        padding: 10px 0px;
+        padding: 25px 0px;
     }
 
     .parent-wrap .parent-overlay-box-1 img {
@@ -1089,466 +1089,479 @@
         display: flex;
         flex-direction: column;
     }
-}
 
-@media screen and (max-width:575px) {
-    .floating-menu {
-        bottom: 16px;
-        gap: 20px;
-        padding: 12px 18px;
-    }
-
-    .main-head {
-        font-size: 26px;
-    }
-
-    .header-wrap-1-right {
-        margin-top: 10px;
-    }
-
-    .text-overlay h3 {
-        font-size: 24px;
-    }
-
-    .gallery-dropdown select {
-        padding: 5px 48px 5px 18px;
-    }
-
-    .services-inner .container-fluid .header-wrap-1 {
-        width: 97%;
-    }
-
-    .floating-menu a {
-        font-size: 15px;
-        min-width: 38px;
-    }
-
-    .floating-menu span {
-        font-size: 10px;
-    }
-
-    .service-card {
-        width: 200px;
-    }
-
-    .service-arrow {
-        width: 20px;
-        height: 20px;
-    }
-
-    .service-arrow svg {
-        font-size: 16px;
-    }
-
-    .service-track {
-        gap: 12px;
-    }
-
-    .service-content h4 {
-        font-size: 14px;
-    }
-
-    .services-inner {
-        padding: 20px 0px;
-    }
-
-    .bi-text-scroll-item-1 h3 {
-        font-size: 30px;
-    }
-
-    .service-sec {
-        margin: 0px 0px;
-    }
-
-    .pills-inner img {
-        width: 70px;
-        height: auto;
-    }
-
-    .falling-pill {
-        font-size: 10px;
-        padding: 8px 18px;
-    }
-
-    .sub-main-1::after {
-        right: 33%;
-    }
-
-    .sub-main-1::before,
-    .sub-main-1::after {
-        top: 50%;
-        width: 30px;
-    }
-
-    .sub-main-1::before {
-        left: 40%;
-    }
-
-    .sub-main-1::after {
-        right: 34%;
-    }
-
-    .project-card {
-        margin-top: 20px;
-    }
-
-    .project-img img {
-        width: 280px !important;
-    }
-
-    .skill-icon {
-        width: 40px;
-        height: 40px;
-    }
-
-    .skill-icon img {
-        width: 22px;
-    }
-
-    .inner-skills .container-fluid {
-        width: 100%;
-    }
-
-
-    .why-right .main-head {
-        font-size: 28px;
-    }
-
-    .why-point {
-        font-size: 12px;
-    }
-
-    .why-desc {
-        font-size: 14px;
-        text-align: justify;
-    }
-
-    .why-left img {
-        width: 65%;
-    }
-
-    .footer-bottom {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .bi-text-scroll-item-1 h3::after {
-        width: 6px;
-        height: 6px;
-        right: -24px;
-    }
-
-    .notfound-title {
-        font-size: 64px;
-    }
-
-    .notfound-subtitle {
-        font-size: 20px;
-    }
-
-    .about-sec-content .about-main-img img {
-        width: 250px;
-    }
-
-    .about-sec {
-        height: 750px;
-    }
-
-    .about-main-img {
-        left: 30%;
-        bottom: -11%;
-    }
-
-    .social-list li a {
-        width: 38px;
-        height: 38px;
-    }
-
-    .social-list li a {
-        width: 30px;
-        height: 30px;
-        font-size: 14px;
-    }
-
-    .about-box {
-        top: 31%;
-    }
-
-    .about-box p:first-child span {
-        font-size: 40px;
-    }
-
-    .about-sec .experience-box {
-        right: 3%;
-        top: 23%;
-    }
-
-    .about-sec .main-head {
-        font-size: 22px;
-    }
-
-    .about-head-wrap .main-head {
-        font-size: 21px;
-    }
-
-    .about-box::before {
-        left: 3px;
-    }
-
-    .why-card p {
-        font-size: 13px;
-    }
-
-    .service-accordion .accordion-button {
-        padding: 10px 20px;
-        font-size: 15px;
-
-    }
-
-    .service-accordion .accordion-button span {
-        font-size: 14px;
-    }
-
-    .project-main .round-head {
-        font-size: 12px;
-    }
-
-    .project-main p {
-        font-size: 14px;
-    }
-
-    .project-main .main-head {
-        font-size: 22px;
-    }
-
-    .get-started-btn {
-        font-size: 13px;
-        padding: 5px 0px 5px 19px;
-    }
-
-    .parent-wrap .parent-overlay-box-1 img {
-        width: 180px;
-    }
-
-    .service-parent {
-        height: 510px;
-    }
-
-    .parent-overlay-box-3 {
-        width: 140px;
-        height: 80px;
-    }
-
-    .parent-overlay-box-4 {
-        width: 140px;
-        height: 80px;
-    }
-
-    .service-counter {
-        font-size: 20px;
-    }
-
-    .parent-overlay-box-2 {
-        top: 26%;
-    }
-
-    .cta-overlay-1 img {
-        width: 320px;
-    }
-
-    .cta-overlay-content-1 .main-head {
-        font-size: 18px;
-    }
-
-    .cta-overlay-content-1 p {
-        font-size: 12px;
-    }
-
-    .cta-overlay-content-1 {
-        max-width: 450px;
-    }
-
-    .services-inner {
-        padding: 80px 0px 30px 0px;
-    }
-
-    .home-banner-overlay img {
-        width: 220px;
-    }
 
     .home-banner-overlay {
-        position: absolute;
-        bottom: 10%;
+        top: 68%;
     }
 
-    .banner-content-left {
-        position: absolute;
-        top: 34%;
+    @media screen and (max-width:575px) {
+        .floating-menu {
+            bottom: 16px;
+            gap: 20px;
+            padding: 12px 18px;
+        }
+
+        .main-head {
+            font-size: 26px;
+        }
+
+        .header-wrap-1-right {
+            margin-top: 10px;
+        }
+
+        .text-overlay h3 {
+            font-size: 24px;
+        }
+
+        .gallery-dropdown select {
+            padding: 5px 48px 5px 18px;
+        }
+
+        .services-inner .container-fluid .header-wrap-1 {
+            width: 97%;
+        }
+
+        .floating-menu a {
+            font-size: 15px;
+            min-width: 38px;
+        }
+
+        .floating-menu span {
+            font-size: 10px;
+        }
+
+        .service-card {
+            width: 200px;
+        }
+
+        .service-arrow {
+            width: 20px;
+            height: 20px;
+        }
+
+        .service-arrow svg {
+            font-size: 16px;
+        }
+
+        .service-track {
+            gap: 12px;
+        }
+
+        .service-content h4 {
+            font-size: 14px;
+        }
+
+        .services-inner {
+            padding: 20px 0px;
+        }
+
+        .bi-text-scroll-item-1 h3 {
+            font-size: 30px;
+        }
+
+        .service-sec {
+            margin: 0px 0px;
+        }
+
+        .pills-inner img {
+            width: 70px;
+            height: auto;
+        }
+
+        .falling-pill {
+            font-size: 10px;
+            padding: 8px 18px;
+        }
+
+        .sub-main-1::after {
+            right: 33%;
+        }
+
+        .sub-main-1::before,
+        .sub-main-1::after {
+            top: 50%;
+            width: 30px;
+        }
+
+        .sub-main-1::before {
+            left: 40%;
+        }
+
+        .sub-main-1::after {
+            right: 34%;
+        }
+
+        .project-card {
+            margin-top: 20px;
+        }
+
+        .project-img img {
+            width: 280px !important;
+        }
+
+        .skill-icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        .skill-icon img {
+            width: 22px;
+        }
+
+        .inner-skills .container-fluid {
+            width: 100%;
+        }
+
+
+        .why-right .main-head {
+            font-size: 28px;
+        }
+
+        .why-point {
+            font-size: 12px;
+        }
+
+        .why-desc {
+            font-size: 14px;
+            text-align: justify;
+        }
+
+        .why-left img {
+            width: 65%;
+        }
+
+        .footer-bottom {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bi-text-scroll-item-1 h3::after {
+            width: 6px;
+            height: 6px;
+            right: -24px;
+        }
+
+        .notfound-title {
+            font-size: 64px;
+        }
+
+        .notfound-subtitle {
+            font-size: 20px;
+        }
+
+        .about-sec-content .about-main-img img {
+            width: 250px;
+        }
+
+        .about-sec {
+            height: 750px;
+        }
+
+        .about-main-img {
+            left: 30%;
+            bottom: -11%;
+        }
+
+        .social-list li a {
+            width: 38px;
+            height: 38px;
+        }
+
+        .social-list li a {
+            width: 30px;
+            height: 30px;
+            font-size: 14px;
+        }
+
+        .about-box {
+            top: 31%;
+        }
+
+        .about-box p:first-child span {
+            font-size: 40px;
+        }
+
+        .about-sec .experience-box {
+            right: 3%;
+            top: 23%;
+        }
+
+        .about-sec .main-head {
+            font-size: 22px;
+        }
+
+        .about-head-wrap .main-head {
+            font-size: 21px;
+        }
+
+        .about-box::before {
+            left: 3px;
+        }
+
+        .why-card p {
+            font-size: 13px;
+        }
+
+        .service-accordion .accordion-button {
+            padding: 10px 20px;
+            font-size: 15px;
+
+        }
+
+        .service-accordion .accordion-button span {
+            font-size: 14px;
+        }
+
+        .project-main .round-head {
+            font-size: 12px;
+        }
+
+        .project-main p {
+            font-size: 14px;
+        }
+
+        .project-main .main-head {
+            font-size: 22px;
+        }
+
+        .get-started-btn {
+            font-size: 13px;
+            padding: 5px 0px 5px 19px;
+        }
+
+        .parent-wrap .parent-overlay-box-1 img {
+            width: 180px;
+        }
+
+        .service-parent {
+            height: 510px;
+        }
+
+        .parent-overlay-box-3 {
+            width: 140px;
+            height: 80px;
+        }
+
+        .parent-overlay-box-4 {
+            width: 140px;
+            height: 80px;
+        }
+
+        .service-counter {
+            font-size: 20px;
+        }
+
+        .parent-overlay-box-2 {
+            top: 26%;
+        }
+
+        .cta-overlay-1 img {
+            width: 320px;
+        }
+
+        .cta-overlay-content-1 .main-head {
+            font-size: 18px;
+        }
+
+        .cta-overlay-content-1 p {
+            font-size: 12px;
+        }
+
+        .cta-overlay-content-1 {
+            max-width: 450px;
+        }
+
+        .services-inner {
+            padding: 80px 0px 30px 0px;
+        }
+
+        .home-banner-overlay img {
+            width: 220px;
+        }
+
+        .home-banner-overlay {
+            position: absolute;
+            bottom: 10%;
+        }
+
+        .banner-content-left {
+            position: absolute;
+            top: 34%;
+        }
+
+        .banner-subtitle {
+            font-size: 45px;
+        }
+
+        .banner-title {
+            font-size: 50px;
+        }
+
+        .banner-title-outline {
+            font-size: 40px;
+        }
+
+        .banner-content-right {
+            top: 5%;
+        }
+
+        .start-inner::after {
+            width: 200px;
+            height: 200px;
+        }
+
+        .enter-btn {
+            font-size: 15px !important;
+        }
+
+        .speaker-btn {
+            width: 30px;
+            height: 30px;
+            font-size: 14px;
+        }
+
+        .gallery-main-img {
+            margin-top: -50px !important;
+        }
+
+        .gallery-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .contact-content-1 h2 {
+            font-size: 18px;
+        }
+
+        .contact-content-1 {
+            max-width: 520px;
+            padding: 15px 18px;
+        }
+
+        .service-accordian-wrap .service-inside-img img {
+            width: 45%;
+        }
+
+        .service-accordion .accordion-button {
+            padding: 18px 22px;
+            font-size: 16px;
+            gap: 10px;
+        }
     }
 
-    .banner-subtitle {
-        font-size: 45px;
-    }
+    @media screen and (max-width:425px) {
+        .bi-text-scroll-item-1 h3 {
+            font-size: 20px;
+        }
 
-    .banner-title {
-        font-size: 50px;
-    }
+        .falling-pill {
+            font-size: 11px;
+            padding: 6px 14px;
+        }
 
-    .banner-title-outline {
-        font-size: 40px;
-    }
+        .speaker-btn {
+            bottom: 90px;
+        }
 
-    .banner-content-right {
-        top: 5%;
-    }
+        .aboutus-left .main-head {
+            font-size: 26px;
+        }
 
-    .start-inner::after {
-        width: 200px;
-        height: 200px;
-    }
+        .skill-icon {
+            width: 30px;
+            height: 30px;
+        }
 
-    .enter-btn {
-        font-size: 15px !important;
-    }
+        .skill-icon img {
+            width: 18px;
+        }
 
-    .speaker-btn {
-        width: 30px;
-        height: 30px;
-        font-size: 14px;
-    }
+        .about-box {
+            padding: 15px 15px;
+        }
 
-    .gallery-main-img {
-        margin-top: -50px !important;
-    }
+        .service-accordion .accordion-button {
+            padding: 12px 12px;
+            font-size: 14px;
+            gap: 6px;
+        }
 
-    .gallery-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
+        .about-sec .main-head {
+            font-size: 22px;
+        }
 
-    .contact-content-1 h2 {
-        font-size: 18px;
-    }
+        .about-main-img {
+            bottom: -7%;
+        }
 
-    .contact-content-1 {
-        max-width: 520px;
-        padding: 15px 18px;
-    }
+        .main-head {
+            font-size: 22px;
+        }
 
-    .service-accordian-wrap .service-inside-img img {
-        width: 45%;
-    }
+        .get-started-btn {
+            font-size: 11px;
+        }
 
-    .service-accordion .accordion-button {
-        padding: 18px 22px;
-        font-size: 16px;
-        gap: 10px;
-    }
-}
+        .parent-overlay-box-2 p {
+            font-size: 10px;
+        }
 
-@media screen and (max-width:425px) {
-    .bi-text-scroll-item-1 h3 {
-        font-size: 20px;
-    }
+        .parent-overlay-box-2 h4 {
+            font-size: 16px;
+        }
 
-    .falling-pill {
-        font-size: 11px;
-        padding: 6px 14px;
-    }
+        .parent-wrap .parent-overlay-box-1 {
+            left: 59%;
+        }
 
-    .skill-icon {
-        width: 30px;
-        height: 30px;
-    }
+        .parent-overlay-box-2 {
+            top: 28%;
+        }
 
-    .skill-icon img {
-        width: 18px;
-    }
+        .banner-title-outline {
+            font-size: 36px;
+        }
 
-    .about-box {
-        padding: 15px 15px;
-    }
+        .banner-title {
+            font-size: 38px;
+        }
 
-    .service-accordion .accordion-button {
-        padding: 12px 12px;
-        font-size: 14px;
-        gap: 6px;
-    }
+        .home-banner-overlay {
+            position: absolute;
+            top: 62%;
+        }
 
-    .about-sec .main-head {
-        font-size: 22px;
-    }
+        .contact-content-1 h2 {
+            font-size: 15px;
+        }
 
-    .about-main-img {
-        bottom: -7%;
-    }
+        .contact-content-1 p {
+            font-size: 13px;
+        }
 
-    .main-head {
-        font-size: 22px;
-    }
+        .contact-btn {
+            bottom: 38%;
+        }
 
-    .get-started-btn {
-        font-size: 11px;
-    }
+        .contact-item {
+            padding: 5px 9px;
+            border-radius: 12px;
+            font-size: 10px;
+        }
 
-    .parent-overlay-box-2 p {
-        font-size: 10px;
-    }
+        .contact-item svg {
+            font-size: 18px;
 
-    .parent-overlay-box-2 h4 {
-        font-size: 16px;
-    }
+        }
 
-    .parent-wrap .parent-overlay-box-1 {
-        left: 59%;
-    }
+        .contact-floating .item-2 {
+            top: 86%;
+            left: 57%;
+        }
 
-    .parent-overlay-box-2 {
-        top: 28%;
-    }
-
-    .banner-title-outline {
-        font-size: 36px;
-    }
-
-    .banner-title {
-        font-size: 38px;
-    }
-
-    .home-banner-overlay {
-        position: absolute;
-        top: 62%;
-    }
-
-    .contact-content-1 h2 {
-        font-size: 15px;
-    }
-
-    .contact-content-1 p {
-        font-size: 13px;
-    }
-
-    .contact-btn {
-        bottom: 38%;
-    }
-
-    .contact-item {
-        padding: 5px 9px;
-        border-radius: 12px;
-        font-size: 10px;
-    }
-
-    .contact-item svg {
-        font-size: 18px;
-
-    }
-
-    .contact-floating .item-2 {
-        top: 86%;
-        left: 57%;
-    }
-
-    .contact-center-img {
-        top: 83%;
+        .contact-center-img {
+            top: 83%;
+        }
     }
 }
 

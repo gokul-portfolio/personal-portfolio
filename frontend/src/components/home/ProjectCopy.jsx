@@ -1,29 +1,74 @@
-import React, { useState } from "react";
+import React from "react";
+
+import { useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import ProjectCards from "../common/ProjectCards";
-import projectItems from "../../data/projects";
+
+import project1 from "../../assets/images/projects/project-1.webp";
+import project2 from "../../assets/images/projects/project-2.webp";
+import project3 from "../../assets/images/projects/project-3.webp";
+import project4 from "../../assets/images/projects/project-4.webp";
+import project5 from "../../assets/images/projects/project-3.webp";
+import project6 from "../../assets/images/projects/project-2.webp";
+
+const projectItems = [
+    {
+        id: 1,
+        title: "Travel Website Design",
+        image: project1,
+        tags: ["UI/UX", "Responsive Design", "Web UI"],
+    },
+    {
+        id: 2,
+        title: "E-Commerce Website",
+        image: project2,
+        tags: ["UI Design", "Frontend", "E-Commerce"],
+    },
+    {
+        id: 3,
+        title: "Portfolio Website",
+        image: project3,
+        tags: ["React", "Personal Branding", "Modern UI"],
+    },
+    {
+        id: 4,
+        title: "Business Landing Page",
+        image: project4,
+        tags: ["SEO", "Landing Page", "Conversion UI"],
+    },
+    {
+        id: 5,
+        title: "Dashboard UI",
+        image: project5,
+        tags: ["Admin Panel", "Data UI", "UX Design"],
+    },
+    {
+        id: 6,
+        title: "SaaS Website",
+        image: project6,
+        tags: ["Web App", "SaaS UI", "Scalable UI"],
+    },
+];
+
 
 const Project = () => {
 
     const [visibleCount, setVisibleCount] = useState(4);
 
     const loadMore = () => {
-        setVisibleCount(prev =>
+        setVisibleCount((prev) =>
             Math.min(prev + 2, projectItems.length)
         );
     };
 
     const loadLess = () => {
-        setVisibleCount(prev =>
-            Math.max(prev - 2, 4)
-        );
+        setVisibleCount((prev) => Math.max(prev - 2, 4));
     };
+
 
     return (
         <div className="inner-projects">
             <Container fluid>
-
-                {/* HEADER */}
                 <div className="header-wrap mb-4">
                     <div className="header-wrap-3">
                         <h2 className="bg-header">Our Best Projects</h2>
@@ -37,7 +82,6 @@ const Project = () => {
                     </h2>
                 </div>
 
-                {/* PROJECT LIST */}
                 <div className="project-card-wrap">
                     <Row>
                         {projectItems
@@ -46,16 +90,14 @@ const Project = () => {
                                 <ProjectCards
                                     key={item.id}
                                     title={item.title}
-                                    image={item.thumbnail}                 
-                                    category={item.projectCatagory}      
-                                    tech={item.tech}     
-                                    link={item.slug}               
+                                    image={item.image}
+                                    tags={item.tags}
                                     marginTop={index % 2 !== 0}
                                 />
                             ))}
                     </Row>
 
-                    {/* PAGINATION */}
+
                     <div className="project-pagination">
                         <button
                             onClick={loadLess}
@@ -72,7 +114,6 @@ const Project = () => {
                         </button>
                     </div>
                 </div>
-
             </Container>
         </div>
     );

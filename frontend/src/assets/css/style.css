@@ -1038,6 +1038,10 @@ a:hover {
     margin-left: 6px;
 }
 
+.footer-bottom p strong {
+    color: var(--secondary-color);
+    margin: 0px 6px !important;
+}
 .footer-bottom p {
     display: flex;
     align-items: center;
@@ -2194,6 +2198,13 @@ a:hover {
     transition: all 0.35s ease;
 }
 
+.why-card:hover h3 {
+  background: linear-gradient(90deg, #ff4d4d, #ff8a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.4s ease;
+}
+
 .why-card::before {
     content: "";
     position: absolute;
@@ -2962,7 +2973,7 @@ a:hover {
 
 .project-overlay-content p {
     font-size: 14px;
-    color: var(--black);
+    color: var(--white);
     margin: 12px 0 16px;
     line-height: 1.6;
 }
@@ -4454,67 +4465,102 @@ a:hover {
     }
 }
 
-/* ============================resume page======================= */
-.resume-section {
-  /* background: #f4f6f8; */
-  padding: 40px 0;
+
+
+/* =========================
+   POSTER GALLERY CARD
+========================= */
+
+.poster-gallery-card {
+  position: relative;
+  background: #0f1020;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s ease;
 }
 
-.resume-container {
-  max-width: 900px;
-  background: #ffffff;
-  padding: 40px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  font-family: "Segoe UI", sans-serif;
+.poster-gallery-card:hover {
+  transform: translateY(-8px);
 }
 
-.resume-header h1 {
-  font-weight: 700;
-  letter-spacing: 1px;
+/* IMAGE */
+.poster-img {
+  position: relative;
+  overflow: hidden;
 }
 
-.resume-header p {
+.poster-img img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.6s ease;
+}
+
+/* Image zoom on hover */
+.poster-gallery-card:hover .poster-img img {
+  transform: scale(1.08);
+}
+
+/* =========================
+   GRADIENT OVERLAY (AFTER)
+========================= */
+.poster-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.15),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.poster-gallery-card:hover .poster-img::after {
+  opacity: 1;
+}
+
+/* =========================
+   GLOW BORDER (BEFORE)
+========================= */
+.poster-gallery-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+}
+
+.poster-gallery-card:hover::before {
+  opacity: 1;
+}
+/* poster */
+.poster-content {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+
+.poster-gallery-card:hover .poster-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.poster-content h6 {
+  color: #fff;
   font-size: 14px;
-  color: #555;
-}
-
-.resume-header a {
-  color: #0d6efd;
-  text-decoration: none;
-  margin-left: 5px;
-}
-
-.resume-block {
-  margin-top: 25px;
-}
-
-.resume-block h4 {
-  border-bottom: 2px solid #000;
-  padding-bottom: 6px;
-  margin-bottom: 12px;
-  font-weight: 600;
-}
-
-.resume-block h6 {
-  font-weight: 600;
-}
-
-.resume-block h6 span {
-  float: right;
-  font-size: 13px;
-  color: #666;
-}
-
-.resume-block ul {
-  padding-left: 20px;
-}
-
-.resume-block li {
-  margin-bottom: 6px;
-  font-size: 14px;
-}
-
-.two-column li {
-  list-style: none;
-  margin-bottom: 8px;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.3px;
 }

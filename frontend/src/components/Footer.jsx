@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { FaGithub, FaLinkedin, FaXTwitter, FaHeart } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaInstagram , FaHeart } from "react-icons/fa6";
 import Logo from "../assets/images/favicon.png";
 
 const Footer = () => {
@@ -47,20 +47,20 @@ const Footer = () => {
         {/* BOTTOM */}
         <div className="footer-bottom d-flex justify-content-between align-items-center mt-4 flex-wrap">
           <p className="mb-0">
-            Designed & Developed by <strong>Gokul</strong> with{" "}
-            <FaHeart className="text-danger" />
+            Designed & Developed by <strong> Gokul </strong> with{" "}
+            <FaHeart className="text-danger ms-2" />
           </p>
 
           <div className="social-icons d-flex gap-3">
             <a href="https://github.com/gokul-portfolio" target="_blank" rel="noreferrer">
               <FaGithub />
             </a>
-            <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/gokul-nath-6315a1317/" target="_blank" rel="noreferrer">
               <FaLinkedin />
             </a>
-            <a href="https://twitter.com/yourusername" target="_blank" rel="noreferrer">
-              <FaXTwitter />
-            </a>
+          <a href="https://www.instagram.com/kutti_gokul_/" target="_blank" rel="noreferrer" >
+  <FaInstagram />
+</a>
           </div>
         </div>
 

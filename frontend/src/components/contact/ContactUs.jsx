@@ -65,7 +65,7 @@ const ContactUs = () => {
                         {/* Button */}
                         <div className="contact-btn wow animate__fadeInUp" data-wow-delay="0.8s">
                             <Button to="/" icon={<HiArrowRight />}>
-                                Portfolio
+                             Resume
                             </Button>
                         </div>
 
