@@ -73,6 +73,26 @@ import Organico3 from "../assets/images/projects/organico/img-2.webp";
 import Organico4 from "../assets/images/projects/organico/img-3.webp";
 import Organico5 from "../assets/images/projects/organico/img-4.webp";
 
+
+// Skinin Images
+import Skinin1 from "../assets/images/projects/skinin/main-layout.webp";
+import Skinin2 from "../assets/images/projects/skinin/img-1.webp";
+import Skinin3 from "../assets/images/projects/skinin/img-2.webp";
+import Skinin4 from "../assets/images/projects/skinin/img-3.webp";
+
+// UCallWeFix Images
+import Ucall1 from "../assets/images/projects/ucallwefix/main-layout.webp";
+import Ucall2 from "../assets/images/projects/ucallwefix/img-1.webp";
+import Ucall3 from "../assets/images/projects/ucallwefix/img-2.webp";
+import Ucall4 from "../assets/images/projects/ucallwefix/img-3.webp";
+
+// Oasis Apparels Images
+import Oasis1 from "../assets/images/projects/oasisapparels/main-layout.webp";
+import Oasis2 from "../assets/images/projects/oasisapparels/img-1.webp";
+import Oasis3 from "../assets/images/projects/oasisapparels/img-2.webp";
+import Oasis4 from "../assets/images/projects/oasisapparels/img-3.webp";
+
+
 // ================uiux==========================
 
 // 1Step2Step Child Care UI/UX images
@@ -1075,6 +1095,290 @@ const projects = [
         screenshots: [Organico3, Organico4, Organico5],
         repository: "https://github.com/yourusername/organico-react"
     },
+
+    // skinin
+    {
+        id: 11,
+        slug: "skinin-aesthetics-clinic-website",
+        title: "Skinin Aesthetics Clinic Website",
+        projectCatagory: "Medical & Aesthetic Clinic Website",
+        category: "web",
+
+        role: "UI/UX Design, Frontend Development, SEO Optimization, Performance Optimization",
+
+        objective:
+            "To design and develop a modern, professional, and conversion-focused website for Skinin Aesthetics Clinic that builds trust, improves online visibility, and generates appointment leads.",
+
+        description:
+            "A responsive and elegant website developed for Skinin Aesthetics Clinic to showcase treatments, doctors, services, and improve online lead generation.",
+
+        longDescription:
+            "Skinin Aesthetics is a professional skin and aesthetic clinic website built with a clean, minimal, and trust-driven design approach. The website highlights treatment services, doctor expertise, patient-focused content, and appointment call-to-actions. Special focus was given to user experience, mobile responsiveness, SEO structure, and fast loading performance. The goal was to establish strong digital presence and improve local visibility in search results.",
+
+        mainimg: Skinin1,
+        thumbnail: Skinin2,
+
+        tech: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Bootstrap",
+            "PHP",
+            "MySQL"
+        ],
+
+        features: [
+            "Modern and trust-focused UI design",
+            "Fully responsive across mobile, tablet, and desktop",
+            "Service listing with detailed treatment pages",
+            "Doctor profile and clinic information sections",
+            "Appointment enquiry/contact form integration",
+            "SEO optimized structure (Meta tags, Schema basics)",
+            "Fast loading and performance optimized pages",
+            "Google Maps integration for clinic location"
+        ],
+
+        solution:
+            "Designed a clean medical-focused interface and implemented structured service pages to improve user navigation and SEO. Optimized performance and mobile experience to enhance user engagement and increase appointment enquiries.",
+
+        targetAudience:
+            "Patients looking for skin treatments, aesthetic procedures, and cosmetic care services",
+
+        deliverables: [
+            "UI/UX Design",
+            "Frontend Development",
+            "Backend Form Integration",
+            "On-Page SEO Optimization",
+            "Website Deployment"
+        ],
+
+        challenges: [
+            "Designing a trust-building medical aesthetic interface",
+            "Structuring service pages for better SEO visibility",
+            "Ensuring fast performance despite high-quality images",
+            "Optimizing for local search presence"
+        ],
+
+        deployment: "Live Production Server",
+        client: "Skinin Aesthetics Clinic",
+        duration: "2–3 Weeks",
+        status: "Completed",
+        liveUrl: "https://www.skininaesthetics.com/",
+
+        industry: "Healthcare / Aesthetic Clinic",
+
+        tools: ["Figma", "Google Search Console", "Google Analytics"],
+
+        analytics: "Integrated basic traffic monitoring and performance tracking",
+
+        seoKeywords: [
+            "skin clinic website",
+            "aesthetic clinic website design",
+            "dermatology clinic web development",
+            "skin treatment website",
+            "aesthetic clinic SEO"
+        ],
+
+        timeline: [
+            "Requirement Gathering & Planning - Week 1",
+            "UI Design & Development - Week 2",
+            "Testing, SEO & Deployment - Week 3"
+        ],
+
+        screenshots: [Skinin3, Skinin4],
+
+        repository: null
+    },
+
+    // ucallwefix
+    {
+        id: 12,
+        slug: "ucallwefix-electrical-plumbing-website",
+        title: "UCallWeFix Service Website",
+        projectCatagory: "Home Services Business Website",
+        category: "web",
+
+        role: "UI/UX Design, Frontend Development, SEO Optimization, Lead Generation Optimization",
+
+        objective:
+            "To design and develop a professional, service-focused website for UCallWeFix that increases online visibility, builds customer trust, and generates service booking enquiries for electrical and plumbing solutions.",
+
+        description:
+            "A responsive and conversion-driven website developed for UCallWeFix to showcase electrical and plumbing services, improve credibility, and generate customer leads.",
+
+        longDescription:
+            "UCallWeFix is a home services website built for an electrical and plumbing service provider. The website was designed with a clean, service-oriented layout focusing on quick contact access, emergency service visibility, and trust-building elements. Dedicated service pages were structured for better SEO ranking, and clear call-to-action sections were implemented to improve enquiry conversions. The project emphasized mobile responsiveness, fast loading performance, and local search optimization to help attract customers actively searching for repair and maintenance services.",
+
+        mainimg: Ucall1,
+        thumbnail: Ucall2,
+
+        tech: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Bootstrap",
+            "PHP",
+            "MySQL"
+        ],
+
+        features: [
+            "Service-focused modern UI design",
+            "Fully responsive design across all devices",
+            "Dedicated Electrical and Plumbing service pages",
+            "Quick call and WhatsApp contact integration",
+            "Lead enquiry/contact form integration",
+            "SEO-optimized page structure and metadata",
+            "Google Maps integration for service coverage area",
+            "Performance optimized for fast loading"
+        ],
+
+        solution:
+            "Created a structured service-based layout with clear call-to-actions for quick customer engagement. Implemented SEO best practices to improve local search visibility and optimized the website for mobile users, as most service bookings happen via smartphones.",
+
+        targetAudience:
+            "Homeowners, tenants, and businesses looking for reliable electrical and plumbing repair services",
+
+        deliverables: [
+            "UI/UX Design",
+            "Frontend Development",
+            "Backend Contact Form Integration",
+            "On-Page SEO Optimization",
+            "Website Deployment"
+        ],
+
+        challenges: [
+            "Designing a high-conversion service-based layout",
+            "Structuring service pages for local SEO ranking",
+            "Optimizing mobile experience for quick bookings",
+            "Ensuring fast performance despite service images and banners"
+        ],
+
+        deployment: "Live Production Server",
+        client: "UCallWeFix",
+        duration: "2–3 Weeks",
+        status: "Completed",
+        liveUrl: "https://ucallwefix.com/",
+
+        industry: "Home Services (Electrical & Plumbing)",
+
+        tools: ["Figma", "Google Search Console", "Google Analytics"],
+
+        analytics: "Integrated traffic tracking and enquiry monitoring setup",
+
+        seoKeywords: [
+            "electrical service website",
+            "plumbing service website",
+            "home repair service web design",
+            "electrician website development",
+            "local plumbing service SEO"
+        ],
+
+        timeline: [
+            "Requirement Analysis & Planning - Week 1",
+            "UI Design & Development - Week 2",
+            "Testing, SEO & Deployment - Week 3"
+        ],
+
+        screenshots: [Ucall3, Ucall4],
+
+        repository: null
+    },
+
+    // oasisapparels
+    {
+        id: 13,
+        slug: "oasis-apparels-uniform-manufacturing-website",
+        title: "Oasis Apparels Uniform Manufacturing Website",
+        projectCatagory: "Manufacturing & Corporate Website",
+        category: "web",
+
+        role: "UI/UX Design, Frontend Development, SEO Optimization, Product Showcase Structuring",
+
+        objective:
+            "To design and develop a professional corporate website for Oasis Apparels to showcase their uniform manufacturing services, product categories, and strengthen their brand presence online.",
+
+        description:
+            "A responsive and corporate-focused website developed for Oasis Apparels to highlight uniform manufacturing capabilities, product categories, and enquiry generation.",
+
+        longDescription:
+            "Oasis Apparels is a uniform manufacturing company website designed with a clean, professional, and industry-focused layout. The website showcases various uniform categories such as corporate uniforms, industrial uniforms, school uniforms, and customized apparel solutions. The structure was built to clearly present manufacturing expertise, fabric quality, customization options, and bulk order capabilities. Special attention was given to mobile responsiveness, performance optimization, and SEO-friendly product categorization to improve search visibility and attract business enquiries.",
+
+        mainimg: Oasis1,
+        thumbnail: Oasis2,
+
+        tech: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Bootstrap",
+            "PHP",
+            "MySQL"
+        ],
+
+        features: [
+            "Professional corporate UI design",
+            "Fully responsive layout across devices",
+            "Dedicated uniform category pages",
+            "Product gallery and showcase sections",
+            "Bulk enquiry/contact form integration",
+            "SEO-optimized structure for manufacturing keywords",
+            "Clear call-to-action for business enquiries",
+            "Fast loading and optimized images"
+        ],
+
+        solution:
+            "Designed a structured product-focused website with clear navigation for different uniform categories. Implemented enquiry-focused call-to-actions to generate B2B leads and optimized the website for better search engine visibility in the uniform manufacturing industry.",
+
+        targetAudience:
+            "Schools, corporate companies, factories, institutions, and businesses looking for bulk uniform manufacturing services",
+
+        deliverables: [
+            "UI/UX Design",
+            "Frontend Development",
+            "Backend Enquiry Form Integration",
+            "On-Page SEO Optimization",
+            "Website Deployment"
+        ],
+
+        challenges: [
+            "Organizing multiple uniform categories clearly",
+            "Maintaining professional corporate branding",
+            "Optimizing product images without affecting performance",
+            "Structuring content for manufacturing-related SEO keywords"
+        ],
+
+        deployment: "Live Production Server",
+        client: "Oasis Apparels",
+        duration: "2–3 Weeks",
+        status: "Completed",
+        liveUrl: "https://oasisapparels.in/",
+
+        industry: "Textile Manufacturing / Uniform Production",
+
+        tools: ["Figma", "Google Search Console", "Google Analytics"],
+
+        analytics: "Basic traffic tracking and enquiry monitoring setup",
+
+        seoKeywords: [
+            "uniform manufacturing website",
+            "corporate uniform manufacturer",
+            "school uniform supplier website",
+            "industrial uniform manufacturer",
+            "bulk uniform manufacturing company"
+        ],
+
+        timeline: [
+            "Requirement Gathering & Planning - Week 1",
+            "UI Design & Development - Week 2",
+            "Testing, SEO & Deployment - Week 3"
+        ],
+
+        screenshots: [Oasis3, Oasis4],
+
+        repository: null
+    },
+
+
 
     // ===========================ui/ux==========================================
 

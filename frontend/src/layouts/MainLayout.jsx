@@ -25,7 +25,7 @@ const MainLayout = () => {
 
     if (firstLoadRef.current) {
       firstLoadRef.current = false;
-      return; 
+      return;
     }
 
     setLoadingPage(true);

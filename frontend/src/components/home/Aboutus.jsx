@@ -7,7 +7,9 @@ import { HiArrowRight } from "react-icons/hi";
 const Aboutus = () => {
     return (
         <div className="inner-aboutus">
+
             <Container fluid>
+
                 <Row className="align-items-center">
 
                     <Col lg={7} md={7} sm={12}>
@@ -32,6 +34,7 @@ const Aboutus = () => {
 
                             {/* PROGRESS BARS */}
                             <div className="about-progress mb-3 mb-md-5 wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
+
                                 <div className="progress-item">
                                     <div className="progress-head">
                                         <span>Frontend Development</span>
@@ -70,15 +73,20 @@ const Aboutus = () => {
                             </div>
 
                         </div>
+
+
                     </Col>
 
                     <Col lg={5} md={5} sm={12}>
+                        
                         <div className="aboutus-right wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
                             <img src={AboutImg} className="img-fluid" alt="About Us" />
                         </div>
+                        
                     </Col>
 
                 </Row>
+
             </Container>
         </div>
     );

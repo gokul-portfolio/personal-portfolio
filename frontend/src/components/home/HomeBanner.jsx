@@ -40,7 +40,6 @@ const HomeBanner = () => {
 
                     <Col lg={5} md={5}>
                         <div className="banner-content-right wow animate__animated animate__fadeInRight" data-wow-delay="0.8s">
-
                             <p className="wow animate__animated animate__fadeInUp" data-wow-delay="1s">
                                 We craft modern digital experiences with a strong focus on
                                 design, performance, and user engagement. Our solutions are
