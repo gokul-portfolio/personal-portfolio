@@ -1,14 +1,18 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import projects from "../../data/projects";
-
 import {
-    FaHtml5,
-    FaCss3Alt,
-    FaBootstrap,
-    FaPhp,
-    FaJsSquare,
-    FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaBootstrap,
+  FaPhp,
+  FaJsSquare,
+  FaReact,
+  FaServer,
+  FaChartLine,
+  FaSearch,
+  FaExchangeAlt,
+  FaMagic
 } from "react-icons/fa";
 import { FaRegStickyNote } from "react-icons/fa";
 
@@ -20,15 +24,23 @@ import { HiArrowRight } from "react-icons/hi";
 import Button from "../common/Button";
 
 const techIcons = {
-    HTML: <FaHtml5 />,
-    CSS: <FaCss3Alt />,
-    PHP: <FaPhp />,
-    JavaScript: <FaJsSquare />,
-    Bootstrap: <FaBootstrap />,
-    React: <FaReact />,
-    //   "WOW.js": <SiWow />,
-    Swiper: <SiSwiper />,
-    GSAP: <SiGreensock />,
+  HTML: <FaHtml5 />,
+  CSS: <FaCss3Alt />,
+  PHP: <FaPhp />,
+  JavaScript: <FaJsSquare />,
+  Bootstrap: <FaBootstrap />,
+  React: <FaReact />,
+
+  // 🔥 Backend (Laravel alternative)
+  Laravel: <FaServer />,
+
+  // 🔥 Animation tools (closest match)
+  Swiper: <FaExchangeAlt />,
+  GSAP: <FaMagic />,
+
+  // 🔥 SEO / Analytics
+  "Google Analytics": <FaChartLine />,
+  "Google Search Console": <FaSearch />,
 };
 
 const ProjectMain = () => {

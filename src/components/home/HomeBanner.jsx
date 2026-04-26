@@ -40,12 +40,12 @@ const HomeBanner = () => {
 
                     <Col lg={5} md={5}>
                         <div className="banner-content-right wow animate__animated animate__fadeInRight" data-wow-delay="0.8s">
-                            <p className="wow animate__animated animate__fadeInUp" data-wow-delay="1s">
-I am a Web Developer with 2+ years of experience in building responsive,
-user-friendly, and performance-driven websites. I specialize in creating
-modern web interfaces using React.js, JavaScript, and modern frontend technologies.
-</p>
-
+                           <p className="wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+I am a Software and Web Developer with 2+ years of experience in building responsive,
+user-friendly, and performance-driven applications and websites. I specialize in developing
+scalable software solutions and modern web interfaces using React.js, JavaScript, and
+other modern frontend technologies.
+</p>    
                             <div className="wow animate__animated animate__zoomIn" data-wow-delay="1.2s">
                                 <Button to={'/about'} icon={<HiArrowRight />}>
                                     Get Started

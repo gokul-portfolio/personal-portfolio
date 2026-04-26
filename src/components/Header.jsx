@@ -7,7 +7,7 @@ import {
   Offcanvas
 } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-
+import { FaFileAlt } from "react-icons/fa";
 import {
   FaLinkedinIn,
   FaGithub,
@@ -41,6 +41,19 @@ const Header = () => {
 
   return (
     <>
+
+
+
+<a
+  href="/resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="resume-floating-btn"
+  onClick={playClickSound}
+>
+  <FaFileAlt className="icon" />
+  <span className="label">Resume</span>
+</a>
       {/* ================= HEADER ================= */}
       <Navbar expand="lg" className="portfolio-navbar">
         <Container fluid className="nav-wrapper">

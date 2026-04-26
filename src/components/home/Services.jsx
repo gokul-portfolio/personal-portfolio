@@ -72,7 +72,7 @@ const Services = () => {
 
                         <Col lg={3} md={4} className="d-flex justify-content-end align-items-end">
                             <Button to="/projects" icon={<HiArrowRight />}>
-                                Portfolio
+                               Explore Project
                             </Button>
                         </Col>
                     </Row>

@@ -62,10 +62,9 @@ const About = () => {
                   <span><BsQuote /></span>
                 </p>
                 <p>
-                  I’m <strong>Gokul</strong>, a passionate <strong>Web Developer</strong> focused on
-                  building high-performance, scalable, and SEO-friendly websites.
-                  I specialize in creating clean user interfaces and smooth user
-                  experiences using modern web technologies.
+                  I’m <strong>Gokul</strong>, a passionate <strong>Web & Software Developer</strong> focused on
+                  building high-performance, scalable, and SEO-friendly websites and product-based applications.
+                  I specialize in creating clean user interfaces and seamless user experiences using modern web technologies.
                 </p>
               </div>
 
@@ -101,22 +100,26 @@ const About = () => {
             {/* Marquee */}
             <div className="aboout-footer-marquee wow animate__animated animate__fadeInUp" data-wow-delay="1.2s">
               <div className="marquee-track">
+
                 <span>Frontend Development</span><span className="dot">✦</span>
                 <span>React.js & Modern JavaScript</span><span className="dot">✦</span>
                 <span>Responsive Web Design</span><span className="dot">✦</span>
+
+                <span>Backend Development (Node.js & PHP)</span><span className="dot">✦</span>
+                <span>REST API Development</span><span className="dot">✦</span>
+                <span>MySQL Database Management</span><span className="dot">✦</span>
+
                 <span>SEO Optimized Websites</span><span className="dot">✦</span>
-                <span>High Performance UI</span><span className="dot">✦</span>
+                <span>High Performance Applications</span><span className="dot">✦</span>
                 <span>Clean & Scalable Code</span><span className="dot">✦</span>
 
-                <span>Frontend Development</span><span className="dot">✦</span>
-                <span>React.js & Modern JavaScript</span><span className="dot">✦</span>
-                <span>Responsive Web Design</span><span className="dot">✦</span>
-                <span>SEO Optimized Websites</span><span className="dot">✦</span>
-                <span>High Performance UI</span><span className="dot">✦</span>
-                <span>Clean & Scalable Code</span>
+                <span>Software Development Solutions</span><span className="dot">✦</span>
+                <span>UI/UX Best Practices</span><span className="dot">✦</span>
+                <span>Version Control (Git)</span><span className="dot">✦</span>
+
+               
               </div>
             </div>
-
           </div>
         </div>
       </section>

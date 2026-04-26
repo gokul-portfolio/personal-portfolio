@@ -11,11 +11,9 @@ const ProjectShowCase = () => {
   const [activeTab, setActiveTab] = useState("page1");
   const [currentPage, setCurrentPage] = useState(1);
 
-  // Reset page when tab changes
+  // ✅ Reset page when tab changes
   useEffect(() => {
     setCurrentPage(1);
-    const dropdown = document.getElementById("projectFilter");
-    if (dropdown) dropdown.value = activeTab;
   }, [activeTab]);
 
   return (
@@ -43,21 +41,46 @@ const ProjectShowCase = () => {
 
         {/* TABS */}
         <div className="project-main-tab d-flex flex-column align-items-center">
+
+          {/* Desktop Tabs */}
           <div className="tab-buttons d-none d-md-flex gap-2">
-            <button className={`tab-btn ${activeTab === "page1" ? "active" : ""}`} onClick={() => setActiveTab("page1")}>
+            <button
+              className={`tab-btn ${activeTab === "page1" ? "active" : ""}`}
+              onClick={() => setActiveTab("page1")}
+            >
               Website UI
             </button>
-            <button className={`tab-btn ${activeTab === "page2" ? "active" : ""}`} onClick={() => setActiveTab("page2")}>
+
+            <button
+              className={`tab-btn ${activeTab === "page4" ? "active" : ""}`}
+              onClick={() => setActiveTab("page4")}
+            >
+              Software
+            </button>
+
+            <button
+              className={`tab-btn ${activeTab === "page2" ? "active" : ""}`}
+              onClick={() => setActiveTab("page2")}
+            >
               UI / UX Design
             </button>
-            <button className={`tab-btn ${activeTab === "page3" ? "active" : ""}`} onClick={() => setActiveTab("page3")}>
+
+            <button
+              className={`tab-btn ${activeTab === "page3" ? "active" : ""}`}
+              onClick={() => setActiveTab("page3")}
+            >
               Posters & Branding
             </button>
           </div>
 
+          {/* Mobile Dropdown */}
           <div className="tab-dropdown d-md-none w-100 mt-3">
-            <Form.Select onChange={(e) => setActiveTab(e.target.value)}>
+            <Form.Select
+              value={activeTab}
+              onChange={(e) => setActiveTab(e.target.value)}
+            >
               <option value="page1">Website UI</option>
+              <option value="page4">Software</option>
               <option value="page2">UI / UX Design</option>
               <option value="page3">Posters & Branding</option>
             </Form.Select>
@@ -66,31 +89,49 @@ const ProjectShowCase = () => {
 
         {/* CONTENT */}
         {activeTab === "page1" && (
-          <ProjectCards category="web" page={currentPage} limit={ITEMS_PER_PAGE} />
+          <ProjectCards
+            category="web"
+            page={currentPage}
+            limit={ITEMS_PER_PAGE}
+          />
         )}
 
         {activeTab === "page2" && (
-          <ProjectCards category="uiux" page={currentPage} limit={ITEMS_PER_PAGE} />
+          <ProjectCards
+            category="uiux"
+            page={currentPage}
+            limit={ITEMS_PER_PAGE}
+          />
         )}
 
         {activeTab === "page3" && (
-          <ProjectGalleryCard category="branding" page={currentPage} limit={ITEMS_PER_PAGE} />
+          <ProjectGalleryCard
+            category="branding"
+            page={currentPage}
+            limit={ITEMS_PER_PAGE}
+          />
+        )}
+
+        {activeTab === "page4" && (
+          <ProjectCards   // 🔥 changed from Gallery → Cards
+            category="software"
+            page={currentPage}
+            limit={ITEMS_PER_PAGE}
+          />
         )}
 
         {/* PAGINATION */}
         <div className="project-pagination text-center mt-4">
           <button
             disabled={currentPage === 1}
-            onClick={() => setCurrentPage(p => p - 1)}
+            onClick={() => setCurrentPage((p) => p - 1)}
           >
             ← Prev
           </button>
 
           <span className="mx-3">Page {currentPage}</span>
 
-          <button
-            onClick={() => setCurrentPage(p => p + 1)}
-          >
+          <button onClick={() => setCurrentPage((p) => p + 1)}>
             Next →
           </button>
         </div>

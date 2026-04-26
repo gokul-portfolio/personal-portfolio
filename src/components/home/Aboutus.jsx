@@ -24,14 +24,16 @@ const Aboutus = () => {
                             </h2>
 
                             <p className="about-desc wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
-                                I am a passionate Web Developer with 2+ years of experience in designing and developing
-                                modern, responsive, and high-performance websites. I specialize in creating static,
-                                dynamic, and e-commerce websites tailored to business needs.
+                                I am a passionate Web and Software Developer with 2+ years of experience in designing and developing
+                                modern, responsive, and high-performance applications and websites. I specialize in building both
+                                frontend and backend solutions using React.js and Node.js, creating scalable and efficient digital products.
 
-                                My focus is on clean code, responsive UI design, SEO-friendly structure, and
-                                performance optimization to ensure websites are fast, scalable, and user-friendly.
-                                I help businesses build a strong online presence through modern web technologies
-                                and reliable digital solutions.
+                                My expertise includes developing static, dynamic, and e-commerce platforms tailored to business needs.
+                                I focus on writing clean and maintainable code, creating responsive UI/UX, and ensuring SEO-friendly
+                                structures with optimized performance.
+
+                                I help businesses build a strong online presence by delivering reliable software solutions and
+                                modern web applications using the latest technologies.
                             </p>
 
                             {/* PROGRESS BARS */}

@@ -53,6 +53,13 @@ import Organico2 from "../assets/images/projects/organico/img-1.webp";
 import Organico3 from "../assets/images/projects/organico/img-2.webp";
 import Organico4 from "../assets/images/projects/organico/img-3.webp";
 
+
+import carcare1 from "../assets/images/projects/5k-car-care/img-1.webp";
+import tasktick1 from "../assets/images/projects/taskytick/img-1.webp";
+import nodezipper1 from "../assets/images/projects/nodezipper/img-1.webp";
+
+
+
 // ===== UI/UX – 1Step2Step =====
 import childcare2 from "../assets/images/layout/1step2step/img-1.webp";
 
@@ -254,6 +261,27 @@ const galleryData = [
     src: childcare2,
     title: "1Step2Step UI/UX Design",
     description: "Child care UI/UX case study screens",
+  },
+  {
+    id: 26,
+    category: "web",
+    src: carcare1,
+    title: "5k car care",
+    description: "5k Car care screens",
+  },
+  {
+    id: 27,
+    category: "web",
+    src: nodezipper1,
+    title: "node Zipper",
+    description: "Notes screens",
+  },
+  {
+    id: 28,
+    category: "web",
+    src: tasktick1,
+    title: "Tasktick ",
+    description: "Tacktick screens",
   },
 ];
 

@@ -31,59 +31,60 @@ const WhyChoose = () => {
                         </div>
                     </Col>
 
-                    <Col lg={7}  md={7} className="order-1 order-md-2">
+                    <Col lg={7} md={7} className="order-1 order-md-2">
                         <div className="why-right">
                             <h2 className="main-head">
-                                Building Web Solutions <br />
+                                Building Web & Software Solutions <br />
                                 You Can Trust
                             </h2>
 
                             <p className="why-desc">
-                                I help businesses and individuals build modern, high-performing
-                                web applications with clean code, strong UI/UX, and scalable
-                                architecture. My focus is on quality, performance, and long-term
-                                value.
+                                I help businesses and individuals build modern, scalable, and high-performance
+                                web and software applications. Using React.js and Node.js, I develop complete
+                                solutions with clean architecture, efficient backend systems, and engaging UI/UX.
+                                My focus is on delivering reliable, secure, and long-term digital products.
                             </p>
 
                             {/* FEATURES LIST */}
                             <div className="why-points">
+
                                 <div className="why-point">
                                     <img src={tick} className="img-fluid" alt="" />
-                                    <span>Responsive & Modern Design</span>
+                                    <span>Modern UI with React.js</span>
                                 </div>
 
                                 <div className="why-point">
                                     <img src={tick} className="img-fluid" alt="" />
-                                    <span>Clean & Scalable Codebase</span>
+                                    <span>Backend Development with Node.js</span>
                                 </div>
 
                                 <div className="why-point">
                                     <img src={tick} className="img-fluid" alt="" />
-                                    <span>SEO & Performance Optimized</span>
+                                    <span>Responsive & Mobile-Friendly Design</span>
                                 </div>
 
                                 <div className="why-point">
                                     <img src={tick} className="img-fluid" alt="" />
-                                    <span>User-Focused UI / UX</span>
+                                    <span>Clean, Scalable & Maintainable Code</span>
                                 </div>
 
                                 <div className="why-point">
                                     <img src={tick} className="img-fluid" alt="" />
-                                    <span>Secure & Best Coding Practices</span>
+                                    <span>SEO & Performance Optimization</span>
                                 </div>
 
                                 <div className="why-point">
                                     <img src={tick} className="img-fluid" alt="" />
-                                    <span>Reliable Support & Maintenance</span>
+                                    <span>Secure & Reliable Software Solutions</span>
                                 </div>
+
                             </div>
-
 
                             {/* CTA */}
                             <div className="why-btn mt-4">
-                               <Button to="/gallery" icon={<HiArrowRight />}>
-                               Explore Work
-                               </Button>
+                                <Button to="/gallery" icon={<HiArrowRight />}>
+                                    Explore Work
+                                </Button>
                             </div>
                         </div>
                     </Col>

@@ -45,7 +45,7 @@ const ContactUs = () => {
                                 className="contact-item item-3 wow animate__fadeInRight"
                                 data-wow-delay="0.5s"
                             >
-                              <BsGithub />
+                                <BsGithub />
                                 <span>GitHub</span>
                             </a>
 
@@ -64,9 +64,11 @@ const ContactUs = () => {
 
                         {/* Button */}
                         <div className="contact-btn wow animate__fadeInUp" data-wow-delay="0.8s">
-                            <Button to="/" icon={<HiArrowRight />}>
-                             Resume
-                            </Button>
+                            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                                <Button icon={<HiArrowRight />}>
+                                    Resume
+                                </Button>
+                            </a>
                         </div>
 
                     </div>

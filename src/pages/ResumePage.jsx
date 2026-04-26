@@ -1,12 +1,11 @@
-import React from 'react'
-import ResumeMain from '../components/resume/ResumeMain'
+import { useEffect } from "react";
 
-const ResumePage = () => {
-  return (
-   <>
-   <ResumeMain />
-   </>
-  )
-}
+const ResumeMain = () => {
+  useEffect(() => {
+    window.open("/resume.pdf", "_blank");
+  }, []);
 
-export default ResumePage
+  return null;
+};
+
+export default ResumeMain;

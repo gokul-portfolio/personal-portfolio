@@ -21,6 +21,9 @@ import git from "../../assets/images/icons/git.webp";
 import github from "../../assets/images/icons/github.webp";
 import postman from "../../assets/images/icons/postman.webp";
 import figma from "../../assets/images/icons/figma.webp";
+import tailwind from "../../assets/images/icons/tailwind.webp";
+import googleanalytics from "../../assets/images/icons/googleanalytics.webp";
+import searchconsole from "../../assets/images/icons/searchconsole.webp";
 
 const Skills = () => {
   const skillsData = [
@@ -44,6 +47,9 @@ const Skills = () => {
     { name: "GitHub", icon: github },
     { name: "Postman", icon: postman },
     { name: "Figma", icon: figma },
+    { name: "Tailwind css", icon: tailwind },
+    { name: "Google Analytics", icon: googleanalytics  },
+    { name: "Search Console", icon: searchconsole }
   ];
 
   return (

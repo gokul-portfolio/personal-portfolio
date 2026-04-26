@@ -12,6 +12,36 @@ import RubyMuse3 from "../assets/images/projects/rubymuse/img-3.webp";
 import RubyMuse4 from "../assets/images/projects/rubymuse/img-2.webp";
 import RubyMuse5 from "../assets/images/projects/rubymuse/img-2.webp";
 
+// nodezipper
+import NodeZipper1 from "../assets/images/projects/nodezipper/main-layout.webp";
+import NodeZipper2 from "../assets/images/projects/nodezipper/img-1.webp";
+import NodeZipper3 from "../assets/images/projects/nodezipper/img-2.webp";
+import NodeZipper4 from "../assets/images/projects/nodezipper/img-3.webp";
+import NodeZipper5 from "../assets/images/projects/nodezipper/img-4.webp";
+
+// taskytick
+// tasktick
+import tasktick1 from "../assets/images/projects/taskytick/main-layout.webp";
+import tasktick2 from "../assets/images/projects/taskytick/img-1.webp";
+import tasktick3 from "../assets/images/projects/taskytick/img-2.webp";
+import tasktick4 from "../assets/images/projects/taskytick/img-3.webp";
+import tasktick5 from "../assets/images/projects/taskytick/img-4.webp";
+
+//f-studio
+import FStudio1 from "../assets/images/projects/f-studio/main-layout.webp";
+import FStudio2 from "../assets/images/projects/f-studio/img-1.webp";
+import FStudio3 from "../assets/images/projects/f-studio/img-2.webp";
+import FStudio4 from "../assets/images/projects/f-studio/img-3.webp";
+import FStudio5 from "../assets/images/projects/f-studio/img-4.webp";
+
+// 5k car care
+// 5k-car-care
+import CarCare1 from "../assets/images/projects/5k-car-care/main-layout.webp";
+import CarCare2 from "../assets/images/projects/5k-car-care/img-1.webp";
+import CarCare3 from "../assets/images/projects/5k-car-care/img-2.webp";
+import CarCare4 from "../assets/images/projects/5k-car-care/img-3.webp";
+import CarCare5 from "../assets/images/projects/5k-car-care/img-4.webp";
+
 // axio biotex
 import Axiogen1 from "../assets/images/projects/axiogen/main-layout.webp";
 import Axiogen2 from "../assets/images/projects/axiogen/img-1.webp";
@@ -144,9 +174,10 @@ import poster12 from "../assets/images/poster/post-12.jpg";
 
 const projects = [
 
+    // web development=====================================
     // rubymuse
     {
-        id: 2,
+        id: 1,
         slug: "rubymuse",
         title: "RubyMuse Fashion Store",
         projectCatagory: "E-Commerce Website",
@@ -173,7 +204,6 @@ const projects = [
             "Bootstrap",
             "Swiper",
             "GSAP",
-            "WOW.js"
         ],
 
         features: [
@@ -233,7 +263,211 @@ const projects = [
         repository: null
     },
 
-     // ponniyarkai ecommerce
+    // the f-studio
+    {
+        id: 2,
+        slug: "thef-studio",
+        title: "The F Studio - Fashion Salon",
+        projectCatagory: "Business Website",
+        category: "web",
+
+        role: "UI Design, Frontend Development, SEO Optimization, Performance Enhancement",
+
+        objective:
+            "Develop a premium salon website for The F Studio to showcase beauty services, attract local clients, and enhance online visibility with a modern, SEO-friendly, and mobile-responsive design.",
+
+        description:
+            "A modern and elegant salon website designed to highlight beauty services, customer experience, and brand identity.",
+
+        longDescription:
+            "The F Studio is a fashion and beauty salon website crafted with a clean, luxurious design to reflect the brand’s premium services. The website showcases various offerings such as hair styling, skincare, bridal makeup, and grooming services with visually appealing layouts. It focuses on delivering a smooth user experience with fast loading, mobile responsiveness, and easy navigation. SEO optimization and local search enhancements help attract nearby customers and increase bookings.",
+
+        mainimg: FStudio1,
+        thumbnail: FStudio2,
+
+        tech: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Bootstrap",
+            "GSAP",
+            "WOW.js",
+            "Laraval"
+        ],
+
+        features: [
+            "Elegant and modern UI design reflecting salon branding",
+            "Fully responsive layout for mobile, tablet, and desktop users",
+            "Service showcase with detailed descriptions and visuals",
+            "Smooth animations and transitions for premium user experience",
+            "Fast-loading pages with optimized images and assets",
+            "SEO-friendly structure with local search optimization",
+            "Contact and appointment inquiry forms",
+            "Google Maps integration for easy location access",
+            "Cross-browser compatibility for consistent performance",
+            "Clean and maintainable codebase"
+        ],
+
+        solution:
+            "Designed and developed a visually appealing salon website with a focus on user engagement and brand identity. Implemented smooth animations using GSAP, optimized images for performance, and structured content for better SEO ranking and local discoverability.",
+
+        targetAudience:
+            "Beauty and fashion-conscious customers, bridal clients, and local salon visitors",
+
+        deliverables: [
+            "UI/UX Design",
+            "Frontend Development",
+            "SEO Optimization",
+            "Performance Optimization",
+            "Deployment"
+        ],
+
+        challenges: [
+            "Maintaining a premium and elegant design across all devices",
+            "Optimizing high-quality images without affecting load speed",
+            "Ensuring smooth animations without performance lag"
+        ],
+
+        deployment: "Hostinger Shared Hosting",
+        client: "The F Studio Salon",
+        duration: "3 Weeks",
+        status: "Completed",
+        liveUrl: "https://thefstudio.in/",
+
+        industry: "Beauty & Fashion Salon",
+
+        tools: ["Figma", "Photoshop"],
+
+        analytics: ["Google Analytics", "Google Search Console"],
+
+        seoKeywords: [
+            "salon website design",
+            "beauty salon website",
+            "bridal makeup salon website",
+            "hair styling services online",
+            "local salon SEO website"
+        ],
+
+        timeline: [
+            "UI/UX Design - Week 1",
+            "Frontend Development - Week 2",
+            "SEO + Deployment - Week 3"
+        ],
+
+        screenshots: [FStudio3, FStudio4, FStudio5],
+
+        repository: null
+    },
+
+    // 5k car care
+    {
+        id: 3,
+        slug: "5k-car-care",
+        title: "5K Car Care - Car Service Website",
+        projectCatagory: "Business Website",
+        category: "web",
+
+        role: "UI Design, Frontend Development, SEO Optimization, Performance Enhancement",
+
+        objective:
+            "Develop a modern and scalable website for 5K Car Care to showcase car services, highlight its 250+ branches network, and improve online visibility with a fast, responsive, and SEO-optimized platform.",
+
+        description:
+            "A professional and responsive car service website designed to promote automotive care services and a wide service network.",
+
+        longDescription:
+            "5K Car Care is a comprehensive automotive service website built to represent a growing brand with over 250+ branches across multiple locations. The platform showcases a wide range of services including car washing, detailing, polishing, and maintenance solutions. Designed with a clean and professional layout, the website ensures smooth navigation, fast loading, and mobile responsiveness. It emphasizes trust, service quality, and accessibility, making it easy for customers to explore services and connect with nearby branches. SEO optimization and structured content help improve search visibility and attract local customers.",
+
+        mainimg: CarCare1,
+        thumbnail: CarCare2,
+
+        tech: [
+            // 🌐 Frontend
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Bootstrap",
+
+            "PHP",
+            "Laravel",
+
+            "GSAP",
+            "WOW.js",
+            "Swiper",
+
+            "MySQL",
+
+            "SEO",
+            "Google Analytics",
+            "Google Search Console"
+        ],
+
+        features: [
+            "Clean and professional UI design for automotive services",
+            "Highlight of 250+ branches to build brand trust",
+            "Fully responsive design for all devices",
+            "Service listing with clear categorization",
+            "Fast-loading performance with optimized assets",
+            "SEO-friendly structure with local optimization",
+            "Smooth animations for better user engagement",
+            "Contact and inquiry forms for customer interaction",
+            "Google Maps integration for branch locations",
+            "Cross-browser compatibility and stable performance"
+        ],
+
+        solution:
+            "Developed a scalable and responsive website focusing on brand visibility and user experience. Highlighted the 250+ branch network to build trust and integrated smooth UI interactions using GSAP. Optimized performance and SEO structure to improve search rankings and local reach.",
+
+        targetAudience:
+            "Car owners, vehicle service seekers, and customers looking for reliable car care services",
+
+        deliverables: [
+            "UI/UX Design",
+            "Frontend Development",
+            "SEO Optimization",
+            "Performance Optimization",
+            "Deployment"
+        ],
+
+        challenges: [
+            "Showcasing a large network of 250+ branches effectively",
+            "Maintaining fast performance with multiple service sections",
+            "Ensuring consistent UI across different screen sizes"
+        ],
+
+        deployment: "Shared Hosting",
+        client: "5K Car Care",
+        duration: "3 Weeks",
+        status: "Completed",
+        liveUrl: "https://icloudcs.in/5k-carcare/index",
+
+        industry: "Automotive & Car Services",
+
+        tools: ["Figma", "Photoshop"],
+
+        analytics: ["Google Analytics", "Google Search Console"],
+
+        seoKeywords: [
+            "car service website",
+            "car wash services",
+            "automotive service platform",
+            "car detailing website",
+            "local car care services"
+        ],
+
+        timeline: [
+            "UI/UX Design - Week 1",
+            "Frontend Development - Week 2",
+            "SEO + Deployment - Week 3"
+        ],
+
+        screenshots: [CarCare3, CarCare4, CarCare5],
+
+        repository: null
+    },
+
+
+    // ponniyarkai ecommerce
     {
         id: 4,
         slug: "ponniyarkai-ecommerce",
@@ -303,7 +537,7 @@ const projects = [
         client: "Ponniyarkai",
         duration: "4–5 Weeks",
         status: "Completed",
-        liveUrl: "https://yourportfolio.com",
+        liveUrl: "https://www.ponniyarkkai.com/",
 
         industry: "Organic Food & E-commerce",
         tools: ["Figma", "Photoshop"],
@@ -407,9 +641,10 @@ const projects = [
         screenshots: [Ilampirai3, Ilampirai4, Ilampirai2],
         repository: null
     },
-     //axio gen
+
+    //axio gen
     {
-        id: 3,
+        id: 6,
         slug: "axiogen-biotech",
         title: "Axiogen Biotech Website",
         projectCatagory: "Corporate / Biotech Website",
@@ -497,7 +732,7 @@ const projects = [
 
     // onestep2step
     {
-        id: 6,
+        id: 7,
         slug: "1step2step-child-care",
         title: "1Step2Step Child Care Website",
         projectCatagory: "Dynamic Single Page Website",
@@ -584,9 +819,9 @@ const projects = [
         repository: null
     },
 
-     // skinin
+    // skinin
     {
-        id: 11,
+        id: 8,
         slug: "skinin-aesthetics-clinic-website",
         title: "Skinin Aesthetics Clinic Website",
         projectCatagory: "Medical & Aesthetic Clinic Website",
@@ -680,7 +915,7 @@ const projects = [
 
     // ucallwefix
     {
-        id: 12,
+        id: 9,
         slug: "ucallwefix-electrical-plumbing-website",
         title: "UCallWeFix Service Website",
         projectCatagory: "Home Services Business Website",
@@ -774,7 +1009,7 @@ const projects = [
 
     // oasisapparels
     {
-        id: 13,
+        id: 10,
         slug: "oasis-apparels-uniform-manufacturing-website",
         title: "Oasis Apparels Uniform Manufacturing Website",
         projectCatagory: "Manufacturing & Corporate Website",
@@ -865,11 +1100,11 @@ const projects = [
 
         repository: null
     },
-   
+
 
     // heavens
     {
-        id: 1,
+        id: 12,
         slug: "heavenskey",
         title: "Heavens Key",
         projectCatagory: "Static Site",
@@ -944,11 +1179,10 @@ const projects = [
         repository: null
     },
 
-   
 
     // siri polymers
     {
-        id: 6,
+        id: 13,
         slug: "siri-polymers",
         title: "Siri Polymers Website",
         projectCatagory: "Dynamic Corporate Website",
@@ -1038,7 +1272,7 @@ const projects = [
 
     // fabtex baling press
     {
-        id: 7,
+        id: 14,
         slug: "fabtex-baling-press",
         title: "Fabtex Baling Press Website",
         projectCatagory: "Dynamic Corporate Website",
@@ -1127,7 +1361,7 @@ const projects = [
 
     // mr.taxi tours & travels
     {
-        id: 8,
+        id: 15,
         slug: "mr-taxi-tours-travels",
         title: "Mr.Taxi Tours & Travels Website",
         projectCatagory: "Dynamic Travel Agency Website",
@@ -1193,7 +1427,7 @@ const projects = [
         client: "Mr.Taxi Tours & Travels",
         duration: "3–4 Weeks",
         status: "Completed",
-        liveUrl: "https://yourportfolio.com",
+        liveUrl: "https://www.mrtaxitoursandtravels.com/",
 
         industry: "Travel & Tourism",
         tools: ["Figma"],
@@ -1216,7 +1450,7 @@ const projects = [
 
     // people's laundry
     {
-        id: 9,
+        id: 16,
         slug: "peoples-laundry",
         title: "People’s Laundry Website",
         projectCatagory: "Static Business Website",
@@ -1300,7 +1534,7 @@ const projects = [
 
     // organico react ecommerce (practice project)
     {
-        id: 10,
+        id: 17,
         slug: "organico-react-ecommerce",
         title: "Organico React E-commerce Website",
         projectCatagory: "E-commerce Website (Practice Project)",
@@ -1383,9 +1617,204 @@ const projects = [
         repository: "https://github.com/yourusername/organico-react"
     },
 
-   
 
+    // product development======================
+        
+ {
+    id: 81,
+    slug: "nodezipper",
+    title: "NodeZipper  Task and Notes Management System",
+    projectCatagory: "Product-Based Application",
+    category: "software",
 
+    role: "Full Stack Development, UI Design, Backend API Development, Database Management",
+
+    objective:
+        "Build a scalable product-based application to manage tasks and notes with admin control, secure authentication, and efficient data handling for productivity and workflow management.",
+
+    description:
+        "A full-stack task and notes management application with admin control, built for productivity and efficient data organization.",
+
+    longDescription:
+        "NodeZipper is a product-based software application designed to manage tasks and notes efficiently with a centralized admin control system. The platform allows users to create, update, and organize tasks and notes seamlessly. It includes authentication, role-based access, and a structured dashboard for managing user activities. Built with a scalable architecture, the application ensures performance, security, and a smooth user experience across devices.",
+
+    mainimg: NodeZipper1,
+    thumbnail: NodeZipper2,
+
+    tech: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JavaScript",
+        "Bootstrap",
+        "JWT Authentication"
+    ],
+
+    features: [
+        "User authentication and secure login system",
+        "Admin dashboard with full control over users and data",
+        "Task management system (Create, Update, Delete)",
+        "Notes management with structured organization",
+        "Role-based access control (Admin/User)",
+        "REST API integration with backend services",
+        "Responsive UI for all devices",
+        "Real-time data handling and updates",
+        "Secure data storage with MongoDB",
+        "Clean and scalable architecture"
+    ],
+
+    solution:
+        "Developed a full-stack product using React for frontend and Node.js with Express for backend APIs. Implemented JWT authentication, role-based access, and MongoDB for efficient data storage. Designed an admin panel for centralized control and ensured smooth CRUD operations for tasks and notes.",
+
+    targetAudience:
+        "Individuals, teams, and businesses looking for task and notes management solutions",
+
+    deliverables: [
+        "UI/UX Design",
+        "Frontend Development",
+        "Backend Development",
+        "API Integration",
+        "Database Design",
+        "Deployment"
+    ],
+
+    challenges: [
+        "Implementing secure authentication and role-based access",
+        "Managing real-time updates for tasks and notes",
+        "Designing scalable backend architecture",
+        "Ensuring smooth performance across devices"
+    ],
+
+    deployment: "VPS / Cloud Hosting",
+    client: "Personal Product Project",
+    duration: "4 Weeks",
+    status: "Completed",
+    liveUrl: null,
+
+    industry: "Productivity & Software",
+
+    tools: ["VS Code", "Postman"],
+
+    analytics: [],
+
+    seoKeywords: [
+        "task management app",
+        "notes management system",
+        "admin dashboard software",
+        "productivity web app",
+        "mern stack application"
+    ],
+
+    timeline: [
+        "UI/UX Design - Week 1",
+        "Frontend Development - Week 2",
+        "Backend + API Development - Week 3",
+        "Testing & Deployment - Week 4"
+    ],
+
+    screenshots: [NodeZipper3, NodeZipper4, NodeZipper5],
+
+    repository: null
+},
+
+{
+    id: 82,
+    slug: "tasktick",
+    title: "tasktick - Task & Notes Management System",
+    projectCatagory: "Product-Based Application",
+    category: "software",
+
+    role: "Full Stack Development, UI Design, Backend API Development, Database Management",
+
+    objective:
+        "Build a modern product-based application to manage tasks and notes efficiently with admin control, secure authentication, and scalable architecture for productivity and workflow management.",
+
+    description:
+        "A full-stack task and notes management application designed for productivity, organization, and seamless user experience.",
+
+    longDescription:
+        "tasktick is a product-based software application focused on task and notes management with a clean and user-friendly interface. The platform enables users to create, update, organize, and track tasks and notes efficiently. It includes a secure authentication system, role-based access control, and an admin dashboard to manage users and activities. Designed with scalability and performance in mind, tasktick ensures smooth data handling, fast performance, and a consistent experience across devices.",
+
+    mainimg: tasktick1,
+    thumbnail: tasktick2,
+
+    tech: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JavaScript",
+        "Bootstrap",
+        "JWT Authentication"
+    ],
+
+    features: [
+        "Secure user authentication and login system",
+        "Task management with create, update, delete functionality",
+        "Notes management with structured organization",
+        "Admin dashboard with user and data control",
+        "Role-based access control (Admin & User)",
+        "REST API integration with backend services",
+        "Responsive design for mobile and desktop",
+        "Real-time data updates and smooth UI interactions",
+        "Secure database handling using MongoDB",
+        "Clean, scalable, and maintainable code structure"
+    ],
+
+    solution:
+        "Developed a full-stack application using React for frontend and Node.js with Express for backend APIs. Implemented JWT-based authentication, role-based access control, and MongoDB for efficient data storage. Designed an intuitive dashboard for managing tasks and notes with seamless CRUD operations.",
+
+    targetAudience:
+        "Students, professionals, teams, and businesses looking for efficient task and notes management solutions",
+
+    deliverables: [
+        "UI/UX Design",
+        "Frontend Development",
+        "Backend Development",
+        "API Integration",
+        "Database Design",
+        "Deployment"
+    ],
+
+    challenges: [
+        "Implementing secure authentication and user roles",
+        "Managing real-time updates for tasks and notes",
+        "Designing scalable backend architecture",
+        "Ensuring performance optimization across devices"
+    ],
+
+    deployment: "VPS / Cloud Hosting",
+    client: "Personal Product Project",
+    duration: "4 Weeks",
+    status: "Completed",
+    liveUrl: null,
+
+    industry: "Productivity & Software",
+
+    tools: ["VS Code", "Postman"],
+
+    analytics: [],
+
+    seoKeywords: [
+        "task management application",
+        "notes management system",
+        "todo app with admin panel",
+        "productivity web application",
+        "mern stack project"
+    ],
+
+    timeline: [
+        "UI/UX Design - Week 1",
+        "Frontend Development - Week 2",
+        "Backend + API Development - Week 3",
+        "Testing & Deployment - Week 4"
+    ],
+
+    screenshots: [tasktick3, tasktick4, tasktick5],
+
+    repository: null
+},
 
     // ===========================ui/ux==========================================
 
@@ -1793,7 +2222,7 @@ const projects = [
         client: "Self / UIUX Practice Project",
         duration: "1–2 Weeks",
         status: "Completed",
-        liveUrl: "https://yourportfolio.com",
+        liveUrl: "https://askpspl.co.in/",
 
         industry: "Manufacturing & Industrial Services",
         tools: ["Figma"],
@@ -1879,7 +2308,7 @@ const projects = [
         client: "Self / UIUX Practice Project",
         duration: "1–2 Weeks",
         status: "Completed",
-        liveUrl: "https://yourportfolio.com",
+        liveUrl: "https://flyzoneinfrastructure.in/",
 
         industry: "Construction & Excavation Services",
         tools: ["Figma"],

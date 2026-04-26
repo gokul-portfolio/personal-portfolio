@@ -48,7 +48,13 @@ const servicesData = [
         title: "Website Maintenance & Support",
         image: supportImg,
         description: "I provide ongoing website maintenance, updates, security fixes, and performance monitoring. This ensures your website remains stable, secure, and up to date while continuing to perform reliably over time."
-    }
+    },
+    {
+    id: "08",
+    title: "Product Development",
+    image: reactImg,
+    description: "I develop scalable and high-performance product-based software solutions, focusing on building reliable applications with clean architecture, efficient backend systems, and seamless user experiences for long-term growth."
+}
 ];
 
 export default servicesData;
